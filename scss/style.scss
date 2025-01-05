@@ -1,15 +1,37 @@
 @import 'variables';
 @import 'function';
+@import 'reset';
+
+
+
+// 共同區
+button {
+	font-size: 1rem;
+	border-radius: 50px;
+	padding: 10px;
+	background-color: white;
+
+}
+
+h2 {
+	font-weight: $bold;
+	width: fit-content;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	/* Centers the element horizontally */
+}
+
 
 //導覽列樣式
 .navbar {
 	color: $dark;
 	display: flex;
-	// height: 5vh;
+	height: 10vh;
 	justify-content: space-between;
 	padding: 20px 50px;
-	background-color: $lightgreen;
-	font-size: 1rem;
+	background: $lightgreen;
+	background: linear-gradient(180deg, $green ) 4%, rgba(225, 238, 137, 0.5130646008403361) 63%, rgba(248, 255, 203, 0.05368084733893552) 96%;
 
 	ul {
 		display: flex;
@@ -27,7 +49,6 @@
 	.test {
 		height: 8vh;
 		width: 8vw;
-		font-size: 1rem;
 		border: 2px solid $green;
 		border-radius: 50px;
 		background-color: white;
@@ -37,21 +58,14 @@
 			color: white;
 			transition: .2s ease-in;
 			border: $dark solid;
-			font-weight: 600;
-
 		}
 	}
 }
 
 
-body {
-	font-size: $h6-size;
-	/* currently ems cause chrome bug misinterpreting rems on body element */
-	line-height: 1.6;
-	font-weight: 400;
-	color: #222;
-	margin: 0;
-}
+
+
+
 
 .container {
 	position: relative;
@@ -62,50 +76,6 @@ body {
 	box-sizing: border-box;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	margin: 0;
-}
-
-img {
-	max-width: 100%;
-	height: auto;
-	width: auto\9;
-	/* ie8 */
-}
-
-
-header {
-	height: 500px;
-	background-color: transparent;
-	padding-top: 80px;
-}
-
-h1 {
-	font-family: 'Playfair Display', serif;
-	font-weight: 700;
-	line-height: 76px;
-	font-size: 80px;
-	margin: 0 0 25px 0;
-}
-
-h2 {
-	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 21px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	margin: 0 0 23px 0;
-	font-weight: normal;
-	line-height: 23px;
-}
-
-p {
-	font-size: 16px;
-}
 
 .block {
 	background-color: $dark;
@@ -118,40 +88,19 @@ p {
 	color: $green;
 }
 
-.bold {
-	font-weight: bold;
-}
-
 
 // 首頁泡泡
 .bubbles {
+	display: flex;
 	position: relative;
-	// width: 100vw;
-	// height: 100vh;
-	/* Adjust to fit your design */
-	overflow: visible;
-
-	/* Prevent bubbles from showing outside */
-	.bubbles img {
-		#bubble-pink1 {
-			// position: absolute;
-			// width: 100px;
-			/* Adjust size */
-			height: auto;
-			top: 20%;
-			left: 50%;
-			transform: translate(-30%, -50%);
-		}
-	}
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
 
 }
 
 // 名言
 .quotes {
-	position: absolute;
-	z-index: -1;
-	left: 50%;
-	transform: translateX(-50);
 
 	p {
 		display: flex;
@@ -164,7 +113,58 @@ p {
 // 首圖
 .front {
 	display: flex;
+	padding: 10vh 20vw;
+	justify-content: space-between;
+	img{
+		width: 20vw;
+	}
 }
+
+.frontcard {
+	display: inline;
+}
+
+// 舉例
+.example {
+
+	.example {
+		display: flex;
+		padding: 5vh 10vw;
+		justify-content: space-between;
+
+		.reading,
+		.focus,
+		.sleep {
+			margin: 2vw;
+			background-color: $lightgreen;
+		}
+	}
+}
+
+// 身份
+.identity {
+
+	.who {
+		display: flex;
+		padding: 5vh 10vw;
+		justify-content: space-between;
+	}
+}
+
+// 相關文章
+.post {
+	.postH2 {
+		display: flex;
+	}
+
+	.content {
+		display: flex;
+		padding: 5vh 10vw;
+		justify-content: space-between;
+	}
+}
+
+
 
 // 頁底
 footer {

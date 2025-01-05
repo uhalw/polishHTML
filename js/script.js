@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+
+
 // 首頁泡泡overlay
 
 // Wait for the DOM to load
@@ -41,4 +43,6 @@ document.addEventListener("DOMContentLoaded", () => {
             ease: "power1.inOut"
         }, "<"); // Start this animation at the same time as the previous one
 });
+
+
 

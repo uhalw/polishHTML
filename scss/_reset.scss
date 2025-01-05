@@ -1,0 +1,65 @@
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    font-family: "Kiwi Maru", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    font-weight: $regular;
+}
+
+h1 {
+    font-size: $h1-size;
+}
+
+h2 {
+    font-size: $h2-size;
+}
+
+h3 {
+    font-size: $h3-size;
+}
+
+h4 {
+    font-size: $h4-size;
+}
+
+h5 {
+    font-size: $h5-size;
+}
+
+p {
+    font-size: $p-size;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+    /* ie8 */
+}
+
+
+header {
+    height: 500px;
+    background-color: transparent;
+    padding-top: 80px;
+}
+
+
+.white {
+    color: $green;
+}
+
+.bold {
+    font-weight: bold;
+}
