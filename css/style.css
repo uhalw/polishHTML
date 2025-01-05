@@ -4,9 +4,9 @@
   justify-content: space-between;
   padding: 20px 50px;
   background-color: #E1EEB9;
+  font-size: 1rem;
 }
 .navbar ul {
-  font-size: 18px;
   display: flex;
   list-style-type: none;
   gap: 5vw;
@@ -17,7 +17,7 @@
 .navbar .test {
   height: 8vh;
   width: 8vw;
-  font-size: 18px;
+  font-size: 1rem;
   border: 2px solid #A4C629;
   border-radius: 50px;
   background-color: white;
@@ -25,13 +25,13 @@
 .navbar .test:hover {
   background-color: #A4C629;
   color: white;
-  transition: 0.5s ease-in;
+  transition: 0.2s ease-in;
   border: #242424 solid;
   font-weight: 600;
 }
 
 body {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
@@ -109,18 +109,38 @@ p {
 
 .bubbles {
   position: relative;
-  width: 100%;
-  height: 100vh;
   /* Adjust to fit your design */
   overflow: visible;
   /* Prevent bubbles from showing outside */
 }
-
-.bubbles img #bubble-pink1 {
-  position: absolute;
+.bubbles .bubbles img #bubble-pink1 {
   /* Adjust size */
   height: auto;
   top: 20%;
   left: 50%;
   transform: translate(-30%, -50%);
+}
+
+.quotes {
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  transform: translateX(-50);
+}
+.quotes p {
+  display: flex;
+  justify-content: center;
+}
+
+.front {
+  display: flex;
+}
+
+footer {
+  background-color: #E1EEB9;
+}
+footer small {
+  display: flex;
+  justify-content: center;
+  padding: 2vh 0;
 }/*# sourceMappingURL=style.css.map */

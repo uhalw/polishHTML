@@ -9,9 +9,9 @@
 	justify-content: space-between;
 	padding: 20px 50px;
 	background-color: $lightgreen;
+	font-size: 1rem;
 
 	ul {
-		font-size: 18px;
 		display: flex;
 		list-style-type: none;
 		gap: 5vw;
@@ -27,7 +27,7 @@
 	.test {
 		height: 8vh;
 		width: 8vw;
-		font-size: 18px;
+		font-size: 1rem;
 		border: 2px solid $green;
 		border-radius: 50px;
 		background-color: white;
@@ -35,7 +35,7 @@
 		&:hover {
 			background-color: $green;
 			color: white;
-			transition: .5s ease-in;
+			transition: .2s ease-in;
 			border: $dark solid;
 			font-weight: 600;
 
@@ -45,7 +45,7 @@
 
 
 body {
-	font-size: 1.5em;
+	font-size: $h6-size;
 	/* currently ems cause chrome bug misinterpreting rems on body element */
 	line-height: 1.6;
 	font-weight: 400;
@@ -126,21 +126,53 @@ p {
 // 首頁泡泡
 .bubbles {
 	position: relative;
-	width: 100%;
-	height: 100vh;
+	// width: 100vw;
+	// height: 100vh;
 	/* Adjust to fit your design */
-	overflow:visible;
+	overflow: visible;
+
 	/* Prevent bubbles from showing outside */
+	.bubbles img {
+		#bubble-pink1 {
+			// position: absolute;
+			// width: 100px;
+			/* Adjust size */
+			height: auto;
+			top: 20%;
+			left: 50%;
+			transform: translate(-30%, -50%);
+		}
+	}
+
 }
 
-.bubbles img {
-	#bubble-pink1 {
-		position: absolute;
-		// width: 100px;
-		/* Adjust size */
-		height: auto;
-		top: 20%;
-		left: 50%;
-		transform: translate(-30%, -50%);
+// 名言
+.quotes {
+	position: absolute;
+	z-index: -1;
+	left: 50%;
+	transform: translateX(-50);
+
+	p {
+		display: flex;
+		justify-content: center;
+
+	}
+}
+
+
+// 首圖
+.front {
+	display: flex;
+}
+
+// 頁底
+footer {
+	background-color: $lightgreen;
+
+	small {
+		display: flex;
+		justify-content: center;
+		padding: 2vh 0;
 	}
 }
