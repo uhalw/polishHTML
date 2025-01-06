@@ -3,8 +3,10 @@
 @import 'reset';
 
 
-
+// ------------------
 // 共同區
+// ------------------
+
 button {
 	font-size: 1rem;
 	border-radius: 50px;
@@ -12,14 +14,31 @@ button {
 	background-color: white;
 }
 
-h2 {
+// h2樣式及裝飾
+h2,
+.h2 {
 	font-weight: $bold;
 	width: fit-content;
 	display: flex;
 	justify-content: center;
 	margin: 0 auto;
 	/* Centers the element horizontally */
+
+	img {
+		height: $h1-size;
+		margin-top: 1vh;
+	}
 }
+
+.content {
+
+	display: flex;
+	justify-content: space-between;
+}
+
+// ------------------
+// 共同區結束
+// ------------------
 
 
 //導覽列樣式
@@ -36,22 +55,23 @@ h2 {
 		display: flex;
 		list-style-type: none;
 		gap: 5vw;
+		height: fit-content;
+
 	}
 
 	img {
 		width: 4vw;
-
-
 	}
 
 	// 測驗按鈕
 	.test {
-		height: 4vh;
+		height: fit-content;
 		width: 8vw;
 		border: 2px solid $green;
 		border-radius: 4vh;
 		background-color: white;
 
+		
 		&:hover {
 			background-color: $green;
 			color: white;
@@ -101,79 +121,55 @@ header {
 }
 
 
+
+
 // 首圖
 #front {
-	display: block;
-	.front {
-		display: flex;
-		padding: 10vh 20vw;
-		justify-content: space-between;
+	display: flex;
+	padding: 10vh 5vw;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
 
-		img {
-			width: 20vw;
-		}
-
-		.frontcard {
-			display: inline;
-		}
-
-		.bubbles {
-			position: relative;
-			width: 100vw;
-			height: 100vh;
-			overflow: hidden;
-			z-index: -1;
-		}
+	img {
+		width: 20vw;
 	}
 }
+
+.bubbles {
+	position: absolute;
+	width: 100%;
+	max-width: 100vw;
+	z-index: -1;
+
+}
+
 
 // 舉例
-.example {
-	.example {
-		display: flex;
-		padding: 5vh 10vw;
-		justify-content: space-between;
 
-		.reading,
-		.focus,
-		.sleep {
-			text-align: center;
-			margin: 2vw;
-			width: 100%;
-			max-width: 50vw;
-			display: block;
+.reading,
+.focus,
+.sleep {
+	font-size: $h4-size;
+	font-weight: 600;
+	text-align: center;
+	margin: 2vw;
+	width: 100%;
+	max-width: 50vw;
+	display: block;
 
-			img {
-				height: 100%;
-				max-height: 60vh;
-			}
-		}
+	img {
+		height: 100%;
+		max-height: 60vh;
 	}
 }
+
+
 
 // 身份
-.identity {
-
-	.who {
-		display: flex;
-		padding: 5vh 10vw;
-		justify-content: space-between;
-	}
+.who {
+	display: flex;
 }
-
-// 相關文章
-.post {
-	.postH2 {
-		display: flex;
-	}
-
-	.content {
-		display: flex;
-		padding: 5vh 10vw;
-		justify-content: space-between;
-	}
-}
-
 
 
 // 頁底
@@ -183,6 +179,10 @@ footer {
 	small {
 		display: flex;
 		justify-content: center;
-		padding: 2vh 0;
+		padding: 1vh 0;
+	}
+
+	.disclaimer {
+		color: white;
 	}
 }

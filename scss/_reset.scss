@@ -1,21 +1,21 @@
 
-h1,
-h2,
-h3,
-h4,
-h5,
-p {
-    font-family: "Kiwi Maru", serif;
-}
+
+
 
 h1,
 h2,
 h3,
 h4,
 h5,
-p {
+p,
+summary,
+details,
+button {
+    font-family: "Kiwi Maru", serif;
     font-weight: $regular;
+    list-style: unset;    
 }
+
 
 h1 {
     font-size: $h1-size;
@@ -62,4 +62,9 @@ header {
 
 .bold {
     font-weight: bold;
+}
+
+
+main{
+    padding: 0 10vw;
 }
