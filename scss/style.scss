@@ -10,7 +10,6 @@ button {
 	border-radius: 50px;
 	padding: 10px;
 	background-color: white;
-
 }
 
 h2 {
@@ -27,7 +26,7 @@ h2 {
 .navbar {
 	color: $dark;
 	display: flex;
-	height: 10vh;
+	height: 5vh;
 	justify-content: space-between;
 	padding: 20px 50px;
 	background: $lightgreen;
@@ -47,10 +46,10 @@ h2 {
 
 	// 測驗按鈕
 	.test {
-		height: 8vh;
+		height: 4vh;
 		width: 8vw;
 		border: 2px solid $green;
-		border-radius: 50px;
+		border-radius: 4vh;
 		background-color: white;
 
 		&:hover {
@@ -62,42 +61,34 @@ h2 {
 	}
 }
 
+header {
+
+	.container,
+	.subheading {
+		display: block;
+		position: relative;
+		width: 100%;
+		max-width: 960px;
+		margin: 0 auto;
+		padding: 0 20px;
+		box-sizing: border-box;
 
 
+		.block {
+			background-color: $dark;
+			width: 100%;
+			height: 2px;
+			margin-bottom: 20px;
+		}
 
-
-
-.container {
-	position: relative;
-	width: 100%;
-	max-width: 960px;
-	margin: 0 auto;
-	padding: 0 20px;
-	box-sizing: border-box;
+		.white {
+			color: $green;
+		}
+	}
 }
-
-
-.block {
-	background-color: $dark;
-	width: 100%;
-	height: 2px;
-	margin-bottom: 20px;
-}
-
-.white {
-	color: $green;
-}
-
 
 // 首頁泡泡
-.bubbles {
-	display: flex;
-	position: relative;
-	width: 100vw;
-	height: 100vh;
-	overflow: hidden;
 
-}
 
 // 名言
 .quotes {
@@ -111,22 +102,33 @@ h2 {
 
 
 // 首圖
-.front {
-	display: flex;
-	padding: 10vh 20vw;
-	justify-content: space-between;
-	img{
-		width: 20vw;
-	}
-}
+#front {
+	display: block;
+	.front {
+		display: flex;
+		padding: 10vh 20vw;
+		justify-content: space-between;
 
-.frontcard {
-	display: inline;
+		img {
+			width: 20vw;
+		}
+
+		.frontcard {
+			display: inline;
+		}
+
+		.bubbles {
+			position: relative;
+			width: 100vw;
+			height: 100vh;
+			overflow: hidden;
+			z-index: -1;
+		}
+	}
 }
 
 // 舉例
 .example {
-
 	.example {
 		display: flex;
 		padding: 5vh 10vw;
@@ -135,8 +137,16 @@ h2 {
 		.reading,
 		.focus,
 		.sleep {
+			text-align: center;
 			margin: 2vw;
-			background-color: $lightgreen;
+			width: 100%;
+			max-width: 50vw;
+			display: block;
+
+			img {
+				height: 100%;
+				max-height: 60vh;
+			}
 		}
 	}
 }
