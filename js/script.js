@@ -52,7 +52,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 gsap.timeline({
     scrollTrigger: {
-        trigger: "#figure , .anyone", // The section to watch
+        trigger: " .anyone", // The section to watch
         start: "top 80%", // Trigger animation when .anyone is 80% into the viewport
         end: "bottom top", // Animation stops when .anyone leaves the viewport
         toggleActions: "play none none reverse", // Play on enter, reverse on leave
@@ -65,3 +65,19 @@ gsap.timeline({
     .fromTo(".messy img:nth-child(4)", { opacity: 0, x: 10 }, { opacity: 1, x: 0, duration: 1 });
 
 
+// for figure
+gsap.timeline({
+    scrollTrigger: {
+        trigger: "#front", // The section to watch
+        start: "top 80%", // Trigger animation when #front is 80% into the viewport
+        end: "bottom top", // Animation stops when #front leaves the viewport
+        toggleActions: "play none none reverse", // Play on enter, reverse on leave
+        markers: false, // Set to true to see debug markers
+    },
+    repeat: -1, // Repeats infinitely
+})
+.from(".figure img:nth-child(1)", { opacity: 1, duration: 1 }) // Show the first image
+.to(".figure img:nth-child(1)", { opacity: 0, duration: 1 }, "-=0.5") // Smooth fade out for the first image
+.fromTo(".figure img:nth-child(2)", { opacity: 0 }, { opacity: 1, duration: 1 }) // Show the second image
+.fromTo(".figure img:nth-child(3)", { opacity: 0 }, { opacity: 1, duration: 1 }) // Show the third image
+.fromTo(".figure img:nth-child(4)", { opacity: 0 }, { opacity: 1, duration: 1 }); // Show the fourth image

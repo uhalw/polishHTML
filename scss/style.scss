@@ -149,7 +149,8 @@ header {
 	position: relative;
 
 	img {
-		width: 20vw;
+		width: 100%;
+		max-width: 20vw;
 	}
 }
 
@@ -161,6 +162,35 @@ header {
 
 }
 
+// 動態首圖
+.figure {
+	position: relative;
+	padding: 20vh 10vw;
+
+	img {
+		position: absolute;
+		top: 0;
+		left: 50%;
+	}
+
+	img:nth-child(1) {
+		z-index: 1;
+	}
+
+	img:nth-child(2) {
+		z-index: 2;
+	}
+
+	img:nth-child(3) {
+		z-index: 3;
+		left: 50%;
+	}
+
+	img:nth-child(4) {
+		z-index: 4;
+		left: 50%;
+	}
+}
 
 // 舉例
 
@@ -168,7 +198,6 @@ header {
 .focus,
 .sleep {
 	list-style-type: none;
-
 	font-size: $h4-size;
 	font-weight: 600;
 	text-align: center;
@@ -179,9 +208,7 @@ header {
 
 
 	details {
-		height: 100%;
-		max-height: 30vh;
-		width: 100%;
+		height: 30vh;
 		max-width: 30vw;
 		background-color: $lightgreen;
 	}
@@ -201,8 +228,9 @@ header {
 	text-align: center;
 }
 
+
 // 動態圖
-.messy, .figure {
+.messy {
 	position: relative;
 	padding: 20vh 10vw;
 
@@ -232,12 +260,43 @@ header {
 	}
 }
 
+// 身分
+.person {
+	scale: 0.9;
+	background-color: white;
+	border: 3px solid $pink;
+	border-radius: 10px;
+	width: 20vw;
+	padding: 2vh 1vw;
+	text-align: center;
+
+	img {
+		height: 100%;
+		max-height: 20vh;
+		width: 100%;
+		max-width: 20vw;
+	}
+
+	&:hover {
+		scale: 1;
+		background-color: $pink;
+		transition: .5s ease;
+		color: white;
+
+		img {
+			scale: 1.1;
+			transition: .5s ease;
+
+		}
+	}
+}
+
 // 日常舉例
-.example {
+.example,
+.post {
 	display: block;
 	align-items: center;
 }
-
 
 
 // 頁底
