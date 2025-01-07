@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Polish</title>
+    <title>首頁｜Polish</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap" rel="stylesheet">
@@ -22,7 +22,8 @@
             <li>從身份選擇</li>
         </ul>
         <img src="/images/vector/logo-outline.svg" alt="">
-        <button class="test">自我檢測</button>
+        <a href="test.html" class="button">自我檢測</a>
+
     </section>
 
     <!-- 開頭文字 -->
@@ -48,9 +49,14 @@
                 <img src="./images/vector/bubble-pink1.svg" id="bubble-pink1" alt="Bubble 3">
             </div>
             <!-- 首頁主角 -->
-            <figure class="key-figure">
-                <img src="./images/figure/key visual.svg" alt="">
-            </figure>
+
+            <div class="figure">
+                <img src="./images/figure/me1.svg" alt="">
+                <img src="./images/figure/me2.svg" alt="">
+                <img src="./images/figure/me3.svg" alt="">
+                <img src="./images/figure/me4.svg" alt="">
+            
+            </div>
             <div class="frontcard">
                 <div class="h2">
                     <h2>什麼是神經多樣性？</h2>
@@ -68,13 +74,11 @@
 
         <!-- 神經多樣性的日常舉例 -->
         <section class="example">
-
             <!-- h2 -->
             <div class="h2">
                 <h2>神經多樣性的日常舉例</h2>
                 <img src="./images/vector/decor-leaf.svg" alt="decor-leaf">
             </div>
-
             <div class="content">
                 <div class="reading">
                     <details>
@@ -101,8 +105,31 @@
                     <img src="./images/figure/sleep.svg" alt="sleep" class="sleep">
                 </div>
             </div>
-            <button onclick="">更多日常舉例 </button>
         </section>
+        <!-- 你身邊也有這種人嗎 -->
+        <section class="anyone">
+
+            <div class="h2">
+                <h2>你身邊也有這種人嗎</h2>
+            </div>
+
+            <div class="explain">
+                <p>覺得這個人的想法總是和他人不同<br>
+                    很容易轉移話題 <br>
+                    思想模式很跳動<br>
+                    沒辦法仔細聆聽別人說話</p>
+                <div class="messy">
+                    <img src="./images/figure/messy-figure.svg" alt="messy-figure">
+                    <img src="./images/figure/messy-figure-back.svg" alt="messy-figure-back">
+                    <img src="./images/figure/messy-frontL.svg" alt="messy-frontL">
+                    <img src="./images/figure/messy-frontR.svg" alt="messy-frontR">
+                </div>
+                <p>～其實有更多能跟他相處愉快的方式～</p>
+            </div>
+
+        </section>
+
+
 
         <!--從身分角度選擇 -->
         <section class="identity">
@@ -117,35 +144,38 @@
             </div>
             <div class="content">
                 <!-- 身分角色 -->
-                <div class="who">
-                    <div class="person">
-                        <img src="./images/figure/fam.svg" alt="家人">
-                        <h3>家人</h3>
-                        <p>家人家人家人家人家人</p>
-                    </div>
 
-                    <div class="person">
-                        <img src="./images/figure/friend.svg" alt="親朋好友">
-                        <h3>親朋好友</h3>
-                        <p>親朋好友</p>
-                    </div>
-
-                    <div class="person">
-                        <img src="./images/figure/colleague.svg" alt="同事">
-                        <h3>同事</h3>
-                        <p>同事同事同事同事同事</p>
-
-                    </div>
+                <div class="person">
+                    <img src="./images/figure/fam.svg" alt="家人">
+                    <h3>家人</h3>
+                    <p>家人家人家人家人家人</p>
                 </div>
+
+                <div class="person">
+                    <img src="./images/figure/friend.svg" alt="親朋好友">
+                    <h3>親朋好友</h3>
+                    <p>親朋好友</p>
+                </div>
+
+                <div class="person">
+                    <img src="./images/figure/colleague.svg" alt="同事">
+                    <h3>同事</h3>
+                    <p>同事同事同事同事同事</p>
+
+                </div>
+
             </div>
+
         </section>
 
         <!-- 相關文章 -->
         <section class="post">
+
             <div class="h2">
                 <img src="./images/vector/decor-yellow-long.svg" alt="">
                 <h2>相關文章</h2>
             </div>
+
             <div class="content">
                 <!-- 單篇文章 -->
                 <div class="post">
@@ -168,14 +198,13 @@
                     <button>繼續閲讀</button>
                 </div>
             </div>
-            </div>
         </section>
 
     </main>
     <!-- 頁尾 -->
     <footer>
         <div class="down">
-            <p>參考資料</p>
+            <a href="/ref.html">參考資料</a>
         </div>
         <small>Polish &copy; 2025 All Rights Reserved</small>
         <small class="disclaimer">※本網站僅供學生練習用，無任何商業營利用途。</small>
@@ -187,6 +216,8 @@
     <!---------->
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
     <!-- JS -->
     <script src="./js/script.js"></script>
 </body>

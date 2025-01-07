@@ -1,7 +1,3 @@
-
-
-
-
 h1,
 h2,
 h3,
@@ -10,7 +6,8 @@ h5,
 p,
 summary,
 details,
-button {
+button,
+label {
     font-family: "Kiwi Maru", serif;
     font-weight: $regular;
     list-style: unset;    
@@ -49,13 +46,6 @@ img {
 }
 
 
-header {
-    height: 500px;
-    background-color: transparent;
-    padding-top: 80px;
-}
-
-
 .white {
     color: $green;
 }
@@ -64,7 +54,12 @@ header {
     font-weight: bold;
 }
 
-
+// 網站邊距
 main{
     padding: 0 10vw;
+}
+
+// 網站每部分上下間隔距離
+header, section{
+    padding: 10vh 0;
 }

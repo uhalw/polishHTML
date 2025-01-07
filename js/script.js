@@ -19,20 +19,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Animate individual bubbles
     tl.to(".bubbles img:nth-child(1)", {
-        duration: 4,
+        duration: 5,
         y: -50,   // Move up
-        x: 30,    // Slight horizontal drift
+        x: 100,    // Slight horizontal drift
         opacity: 0.8,
         scale: 1.2,
-        ease: "power1.inOut"
+        ease: ""
     })
         .to(".bubbles img:nth-child(2)", {
-            duration: 5,
+            duration: 6,
             y: 40,    // Move down
-            x: -20,   // Slight horizontal drift
+            x: 30,   // Slight horizontal drift
             opacity: 0.7,
             scale: 1.1,
-            ease: "power1.inOut"
+            ease: "back.out(12)"
         }, "<") // Start this animation at the same time as the previous one
         .to(".bubbles img:nth-child(3)", {
             duration: 6,
@@ -40,9 +40,28 @@ document.addEventListener("DOMContentLoaded", () => {
             x: 10,    // Slight horizontal drift
             opacity: 0.9,
             scale: 1.3,
-            ease: "power1.inOut"
+            ease: "back.out(6)"
         }, "<"); // Start this animation at the same time as the previous one
 });
 
+
+
+
+// anyone messy
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.timeline({
+    scrollTrigger: {
+        trigger: "#figure , .anyone", // The section to watch
+        start: "top 80%", // Trigger animation when .anyone is 80% into the viewport
+        end: "bottom top", // Animation stops when .anyone leaves the viewport
+        toggleActions: "play none none reverse", // Play on enter, reverse on leave
+        markers: false, // Set to true to see debug markers
+    },
+    repeat: -1, // Repeats infinitely
+})
+    .fromTo(".messy img:nth-child(2)", { opacity: 0 }, { opacity: 1, duration: .5 })
+    .fromTo(".messy img:nth-child(3)", { opacity: 0, x: -10 }, { opacity: 1, x: 0, duration: 1 })
+    .fromTo(".messy img:nth-child(4)", { opacity: 0, x: 10 }, { opacity: 1, x: 0, duration: 1 });
 
 

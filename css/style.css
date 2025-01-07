@@ -6,7 +6,8 @@ h5,
 p,
 summary,
 details,
-button {
+button,
+label {
   font-family: "Kiwi Maru", serif;
   font-weight: 400;
   list-style: unset;
@@ -43,12 +44,6 @@ img {
   /* ie8 */
 }
 
-header {
-  height: 500px;
-  background-color: transparent;
-  padding-top: 80px;
-}
-
 .white {
   color: #A4C629;
 }
@@ -61,11 +56,21 @@ main {
   padding: 0 10vw;
 }
 
+header, section {
+  padding: 10vh 0;
+}
+
 button {
   font-size: 1rem;
   border-radius: 50px;
+  border: 3px solid #A4C629;
   padding: 10px;
   background-color: white;
+}
+button:hover {
+  background-color: #A4C629;
+  color: white;
+  transition: 0.5s ease-in-out;
 }
 
 h2,
@@ -87,33 +92,42 @@ h2 img,
   display: flex;
   justify-content: space-between;
 }
+.content img {
+  height: 100%;
+  max-height: 30vh;
+  width: 100%;
+  max-width: 30vw;
+}
 
 .navbar {
   color: #242424;
   display: flex;
-  height: 5vh;
   justify-content: space-between;
-  padding: 20px 50px;
+  padding: 2vh 10vw;
   background: #E1EEB9;
   background: linear-gradient(180deg, #A4C629) 4%, rgba(225, 238, 137, 0.5130646008) 63%, rgba(248, 255, 203, 0.0536808473) 96%;
 }
 .navbar ul {
   display: flex;
   list-style-type: none;
-  gap: 5vw;
+  gap: 1vw;
   height: fit-content;
 }
 .navbar img {
   width: 4vw;
 }
-.navbar .test {
-  height: fit-content;
-  width: 8vw;
+.navbar .button {
+  text-decoration: none;
+  text-align: center;
+  align-self: center;
+  padding: 2vh 0;
+  width: 100%;
+  max-width: 8vw;
   border: 2px solid #A4C629;
   border-radius: 4vh;
   background-color: white;
 }
-.navbar .test:hover {
+.navbar .button:hover {
   background-color: #A4C629;
   color: white;
   transition: 0.2s ease-in;
@@ -168,6 +182,7 @@ header .subheading .white {
 .reading,
 .focus,
 .sleep {
+  list-style-type: none;
   font-size: 2rem;
   font-weight: 600;
   text-align: center;
@@ -176,15 +191,56 @@ header .subheading .white {
   max-width: 50vw;
   display: block;
 }
+.reading details,
+.focus details,
+.sleep details {
+  height: 100%;
+  max-height: 30vh;
+  width: 100%;
+  max-width: 30vw;
+  background-color: #E1EEB9;
+}
 .reading img,
 .focus img,
 .sleep img {
   height: 100%;
-  max-height: 60vh;
+  max-height: 30vh;
+  width: 100%;
+  max-width: 30vw;
 }
 
-.who {
-  display: flex;
+.anyone {
+  text-align: center;
+}
+
+.messy, .figure {
+  position: relative;
+  padding: 20vh 10vw;
+}
+.messy img, .figure img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.messy img:nth-child(1), .figure img:nth-child(1) {
+  z-index: 1;
+}
+.messy img:nth-child(2), .figure img:nth-child(2) {
+  z-index: 2;
+}
+.messy img:nth-child(3), .figure img:nth-child(3) {
+  z-index: 3;
+  left: 50%;
+}
+.messy img:nth-child(4), .figure img:nth-child(4) {
+  z-index: 4;
+  left: 55%;
+}
+
+.example {
+  display: block;
+  align-items: center;
 }
 
 footer {
@@ -197,4 +253,31 @@ footer small {
 }
 footer .disclaimer {
   color: white;
+}
+
+.question {
+  font-weight: 600;
+}
+
+.answers {
+  margin-bottom: 20px;
+}
+
+.answers label {
+  display: block;
+}
+
+#submit {
+  font-family: sans-serif;
+  font-size: 20px;
+  background-color: #279;
+  color: #fff;
+  border: 0px;
+  border-radius: 3px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#submit:hover {
+  background-color: #38a;
 }/*# sourceMappingURL=style.css.map */
