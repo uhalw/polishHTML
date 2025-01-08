@@ -61,6 +61,7 @@ header, section {
 }
 
 button {
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
   font-size: 1rem;
   border-radius: 50px;
   border: 3px solid #A4C629;
@@ -68,9 +69,9 @@ button {
   background-color: white;
 }
 button:hover {
-  background-color: #A4C629;
   color: white;
   transition: 0.5s ease-in-out;
+  box-shadow: 0 0 40px 40px #A4C629 inset;
 }
 
 h2,
@@ -103,7 +104,7 @@ h2 img,
   color: #242424;
   display: flex;
   justify-content: space-between;
-  padding: 2vh 10vw;
+  padding: 4vh 10vw;
   background: #E1EEB9;
   background: linear-gradient(180deg, #A4C629) 4%, rgba(225, 238, 137, 0.5130646008) 63%, rgba(248, 255, 203, 0.0536808473) 96%;
 }
@@ -121,17 +122,19 @@ h2 img,
   text-align: center;
   align-self: center;
   padding: 2vh 0;
-  width: 100%;
-  max-width: 8vw;
-  border: 2px solid #A4C629;
+  width: 10vw;
+  height: 2vh;
+  border: 0.1vw solid #A4C629;
   border-radius: 4vh;
   background-color: white;
+  transition: background 150ms ease-in-out, color 150ms ease-in-out;
 }
 .navbar .button:hover {
   background-color: #A4C629;
   color: white;
   transition: 0.2s ease-in;
-  border: #242424 solid;
+  border: #E1EEB9 solid;
+  background-position: 0 100%;
 }
 
 header .container,
@@ -235,6 +238,11 @@ header .subheading .white {
 .anyone {
   text-align: center;
 }
+.anyone img {
+  width: 3rem;
+  scale: 0.95;
+  align-items: baseline;
+}
 
 .messy {
   position: relative;
@@ -302,7 +310,12 @@ footer small {
   padding: 1vh 0;
 }
 footer .disclaimer {
-  color: white;
+  color: gray;
+}
+footer a {
+  color: black;
+  list-style: none;
+  text-decoration: none;
 }
 
 .question {

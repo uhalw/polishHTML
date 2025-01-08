@@ -7,7 +7,10 @@
 // 共同區
 // ------------------
 
+
+
 button {
+	transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
 	font-size: 1rem;
 	border-radius: 50px;
 	border: 3px solid $green;
@@ -15,9 +18,10 @@ button {
 	background-color: white;
 
 	&:hover {
-		background-color: $green;
 		color: white;
 		transition: .5s ease-in-out;
+		box-shadow: 0 0 40px 40px $green inset;
+	
 	}
 }
 
@@ -61,7 +65,7 @@ h2,
 	color: $dark;
 	display: flex;
 	justify-content: space-between;
-	padding: 2vh 10vw;
+	padding: 4vh 10vw;
 	background: $lightgreen;
 	background: linear-gradient(180deg, $green ) 4%, rgba(225, 238, 137, 0.5130646008403361) 63%, rgba(248, 255, 203, 0.05368084733893552) 96%;
 
@@ -83,18 +87,20 @@ h2,
 		text-align: center;
 		align-self: center;
 		padding: 2vh 0;
-		width: 100%;
-		max-width: 8vw;
-		border: 2px solid $green;
+		width: 10vw;
+		height: 2vh;
+		border: .1vw solid $green;
 		border-radius: 4vh;
 		background-color: white;
-
+		transition: background 150ms ease-in-out, color 150ms ease-in-out;
 
 		&:hover {
 			background-color: $green;
 			color: white;
 			transition: .2s ease-in;
-			border: $dark solid;
+			border: $lightgreen  solid;
+			background-position: 0 100%;
+
 		}
 	}
 }
@@ -226,6 +232,12 @@ header {
 
 .anyone {
 	text-align: center;
+
+	img {
+		width: $h2_size;
+		scale: .95;
+		align-items: baseline;
+	}
 }
 
 
@@ -310,7 +322,12 @@ footer {
 	}
 
 	.disclaimer {
-		color: white;
+		color: gray;
+	}
+	a{
+		color: black;
+		list-style: none;
+		text-decoration: none;
 	}
 }
 
