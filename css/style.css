@@ -100,41 +100,60 @@ h2 img,
   max-width: 30vw;
 }
 
+.you {
+  width: 3rem;
+  scale: 0.95;
+}
+
 .navbar {
-  color: #242424;
   display: flex;
   justify-content: space-between;
-  padding: 4vh 10vw;
-  background: #E1EEB9;
-  background: linear-gradient(180deg, #A4C629) 4%, rgba(225, 238, 137, 0.5130646008) 63%, rgba(248, 255, 203, 0.0536808473) 96%;
+  align-items: center;
+  padding: 2vh 1vw;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #333;
+  position: fixed;
+  /* Make the navbar sticky */
+  top: -80px;
+  /* Hidden initially */
+  width: 100%;
+  /* Full width */
+  z-index: 1000;
+  transition: top 0.3s ease-in-out;
+  /* Smooth slide */
 }
-.navbar ul {
+
+.logo {
   display: flex;
-  list-style-type: none;
+  align-items: center;
   gap: 1vw;
-  height: fit-content;
 }
-.navbar img {
-  width: 4vw;
+
+.logo img {
+  width: 3vw;
 }
-.navbar .button {
+
+.logo h2 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.button {
   text-decoration: none;
   text-align: center;
-  align-self: center;
-  padding: 2vh 0;
-  width: 10vw;
-  height: 2vh;
-  border: 0.1vw solid #A4C629;
+  padding: 1vh 2vw;
+  border: 0.2vw solid #E1EEB9;
   border-radius: 4vh;
-  background-color: white;
-  transition: background 150ms ease-in-out, color 150ms ease-in-out;
+  font-weight: 500;
+  color: #A4C629;
+  transition: background-color 150ms ease-in-out, color 150ms ease-in-out, box-shadow 150ms ease-in-out;
 }
-.navbar .button:hover {
+
+.button:hover {
   background-color: #A4C629;
   color: white;
-  transition: 0.2s ease-in;
-  border: #E1EEB9 solid;
-  background-position: 0 100%;
+  box-shadow: 0 4px 6px #E1EEB9;
 }
 
 header .container,
@@ -238,11 +257,6 @@ header .subheading .white {
 .anyone {
   text-align: center;
 }
-.anyone img {
-  width: 3rem;
-  scale: 0.95;
-  align-items: baseline;
-}
 
 .messy {
   position: relative;
@@ -266,7 +280,7 @@ header .subheading .white {
 }
 .messy img:nth-child(4) {
   z-index: 4;
-  left: 55%;
+  left: 50%;
 }
 
 .person {
@@ -303,19 +317,30 @@ header .subheading .white {
 
 footer {
   background-color: #E1EEB9;
+  height: 20vh;
 }
-footer small {
+
+.text {
+  padding-top: 6vh;
+}
+
+small {
   display: flex;
   justify-content: center;
-  padding: 1vh 0;
+  padding: 0.5vh 0;
 }
-footer .disclaimer {
+
+.disclaimer {
   color: gray;
 }
-footer a {
+
+a {
   color: black;
-  list-style: none;
   text-decoration: none;
+}
+a:hover {
+  color: #66A2AF;
+  text-decoration: underline;
 }
 
 .question {

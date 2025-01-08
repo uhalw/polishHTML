@@ -21,7 +21,7 @@ button {
 		color: white;
 		transition: .5s ease-in-out;
 		box-shadow: 0 0 40px 40px $green inset;
-	
+
 	}
 }
 
@@ -55,6 +55,13 @@ h2,
 
 }
 
+.you {
+
+	width: $h2_size;
+	scale: .95;
+
+}
+
 // ------------------
 // 共同區結束
 // ------------------
@@ -62,48 +69,59 @@ h2,
 
 //導覽列樣式
 .navbar {
-	color: $dark;
 	display: flex;
 	justify-content: space-between;
-	padding: 4vh 10vw;
-	background: $lightgreen;
-	background: linear-gradient(180deg, $green ) 4%, rgba(225, 238, 137, 0.5130646008403361) 63%, rgba(248, 255, 203, 0.05368084733893552) 96%;
+	align-items: center;
+	padding: 2vh 1vw;
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	color: #333;
 
-	ul {
-		display: flex;
-		list-style-type: none;
-		gap: 1vw;
-		height: fit-content;
-
-	}
-
-	img {
-		width: 4vw;
-	}
-
-	// 測驗按鈕
-	.button {
-		text-decoration: none;
-		text-align: center;
-		align-self: center;
-		padding: 2vh 0;
-		width: 10vw;
-		height: 2vh;
-		border: .1vw solid $green;
-		border-radius: 4vh;
-		background-color: white;
-		transition: background 150ms ease-in-out, color 150ms ease-in-out;
-
-		&:hover {
-			background-color: $green;
-			color: white;
-			transition: .2s ease-in;
-			border: $lightgreen  solid;
-			background-position: 0 100%;
-
-		}
-	}
+	position: fixed;
+	/* Make the navbar sticky */
+	top: -80px;
+	/* Hidden initially */
+	width: 100%;
+	/* Full width */
+	z-index: 1000;
+	transition: top 0.3s ease-in-out;
+	/* Smooth slide */
 }
+
+.logo {
+	display: flex;
+	align-items: center;
+	gap: 1vw;
+
+}
+
+.logo img {
+	width: 3vw;
+}
+
+.logo h2 {
+	font-size: $h5-size;
+	color: #333;
+}
+
+.button {
+	text-decoration: none;
+	text-align: center;
+	padding: 1vh 2vw;
+	border: .2vw solid $lightgreen;
+	border-radius: 4vh;
+	font-weight: 500;
+	color: $green;
+	transition: background-color 150ms ease-in-out, color 150ms ease-in-out, box-shadow 150ms ease-in-out;
+}
+
+.button:hover {
+
+	background-color: $green;
+	color: white;
+	box-shadow: 0 4px 6px $lightgreen;
+}
+
 
 header {
 
@@ -232,14 +250,10 @@ header {
 
 .anyone {
 	text-align: center;
+	// padding: 20vh 30vw;
 
-	img {
-		width: $h2_size;
-		scale: .95;
-		align-items: baseline;
-	}
+
 }
-
 
 // 動態圖
 .messy {
@@ -268,7 +282,7 @@ header {
 
 	img:nth-child(4) {
 		z-index: 4;
-		left: 55%;
+		left: 50%;
 	}
 }
 
@@ -314,22 +328,35 @@ header {
 // 頁底
 footer {
 	background-color: $lightgreen;
+	height: 20vh;
+}
 
-	small {
-		display: flex;
-		justify-content: center;
-		padding: 1vh 0;
-	}
+.text{
+	padding-top: 6vh;
+	
+}
 
-	.disclaimer {
-		color: gray;
-	}
-	a{
-		color: black;
-		list-style: none;
-		text-decoration: none;
+small {
+	display: flex;
+	justify-content: center;
+	padding: .5vh 0;
+}
+
+.disclaimer {
+	color: gray;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+
+	&:hover {
+		color: $blue;
+		text-decoration: underline;
+
 	}
 }
+
 
 
 
