@@ -1,3 +1,4 @@
+@charset "UTF-8";
 h1,
 h2,
 h3,
@@ -400,4 +401,13 @@ a:hover {
 
 .link-container a:hover + .link-preview {
   display: block;
+}
+
+#bubble-blue2 {
+  position: relative; /* Position relative to the viewport */
+  right: 30px; /* Start off-screen */
+  top: 70%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for vertical centering */
+  z-index: -1; /* Ensure it’s above other elements */
+  overflow: hidden;
 }/*# sourceMappingURL=style.css.map */
