@@ -104,9 +104,9 @@ h2,
 
 }
 
-/* Light Reflecting Effect for h2 */
-.logo h2 {
+// 測驗按鈕
 
+.logo h2 {
 	font-size: $h5-size;
 	color: #333;
 	font-weight: bold;
@@ -170,9 +170,10 @@ h2,
 	&:hover {
 		background-color: $green;
 		box-shadow: 0 4px 6px $lightgreen;
-a{
-	color: white;
-}
+
+		a {
+			color: white;
+		}
 
 	}
 
@@ -182,9 +183,9 @@ a{
 	text-decoration: none;
 	color: $green ;
 
-	// &:hover {
-	// 	color: white;
-	// }
+	&:hover {
+		color: white;
+	}
 }
 
 header {

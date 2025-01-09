@@ -9,7 +9,7 @@ a,
 summary,
 details,
 button,
-label {
+label, small, head, footer {
   font-family: "Kiwi Maru", serif;
   font-weight: 400;
   list-style: unset;
@@ -142,7 +142,6 @@ h2 img,
   /* Smooth slide */
 }
 
-/* Light Reflecting Effect for h2 */
 .logo h2 {
   font-size: 1.8rem;
   color: #333;
@@ -207,6 +206,9 @@ h2 img,
 .textbtn a {
   text-decoration: none;
   color: #A4C629;
+}
+.textbtn a:hover {
+  color: white;
 }
 
 header .container,

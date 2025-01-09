@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
     gsap.from("#bubble-blue2 img", {
         duration: 6,
         opacity: 1,
-        scale:2,
+        scale: 2,
         x: 600,
         y: -10,   // Start from above
         ease: "power3.inOut",
@@ -90,8 +90,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // Add continuous floating effect
     gsap.to("#bubble-blue2 img", {
         duration: 4,
-        scale:1.6,
-        x:400,
+        scale: 1.6,
+        x: 400,
         y: 20,    // Make it float up and down
         repeat: -1, // Repeat infinitely
         yoyo: true, // Alternate the direction
