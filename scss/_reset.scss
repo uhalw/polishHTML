@@ -4,13 +4,16 @@ h3,
 h4,
 h5,
 p,
+a,
 summary,
 details,
 button,
 label {
     font-family: "Kiwi Maru", serif;
     font-weight: $regular;
-    list-style: unset;    
+    list-style: unset;
+    text-decoration: none;
+color: black;
 }
 
 
@@ -55,11 +58,17 @@ img {
 }
 
 // 網站邊距
-main{
+main {
     padding: 0 10vw;
 }
 
 // 網站每部分上下間隔距離
-header, section{
+header,
+section {
     padding: 10vh 0;
+}
+
+
+html {
+    scroll-behavior: smooth;
 }

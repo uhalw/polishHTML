@@ -5,6 +5,7 @@ h3,
 h4,
 h5,
 p,
+a,
 summary,
 details,
 button,
@@ -12,6 +13,8 @@ label {
   font-family: "Kiwi Maru", serif;
   font-weight: 400;
   list-style: unset;
+  text-decoration: none;
+  color: black;
 }
 
 h1 {
@@ -57,8 +60,13 @@ main {
   padding: 0 10vw;
 }
 
-header, section {
+header,
+section {
   padding: 10vh 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 button {
@@ -123,6 +131,7 @@ h2 img,
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   color: #333;
   position: fixed;
+  text-decoration: none;
   /* Make the navbar sticky */
   top: -80px;
   /* Hidden initially */
@@ -131,6 +140,39 @@ h2 img,
   z-index: 1000;
   transition: top 0.3s ease-in-out;
   /* Smooth slide */
+}
+
+/* Light Reflecting Effect for h2 */
+.logo h2 {
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: bold;
+  background: linear-gradient(100deg, #66A2AF, #A4C629);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: light-reflect 6s linear infinite;
+}
+.logo h2:hover {
+  color: #A4C629;
+}
+
+/* Keyframes for the Animation */
+@keyframes light-reflect {
+  0% {
+    background-position: 200% 10%;
+  }
+  100% {
+    background-position: -200% 100%;
+  }
+}
+.logo a {
+  color: #333;
+  text-decoration: none;
+}
+.logo a:hover {
+  text-decoration: underline;
+  color: #66A2AF;
 }
 
 .logo {
@@ -143,26 +185,28 @@ h2 img,
   width: 3vw;
 }
 
-.logo h2 {
-  font-size: 1.8rem;
-  color: #333;
-}
-
-.button {
+.textbtn {
   text-decoration: none;
   text-align: center;
   padding: 1vh 2vw;
   border: 0.2vw solid #E1EEB9;
   border-radius: 4vh;
   font-weight: 500;
-  color: #A4C629;
+  right: 60px;
+  position: absolute;
   transition: background-color 150ms ease-in-out, color 150ms ease-in-out, box-shadow 150ms ease-in-out;
 }
-
-.button:hover {
+.textbtn:hover {
   background-color: #A4C629;
-  color: white;
   box-shadow: 0 4px 6px #E1EEB9;
+}
+.textbtn:hover a {
+  color: white;
+}
+
+.textbtn a {
+  text-decoration: none;
+  color: #A4C629;
 }
 
 header .container,
@@ -320,33 +364,33 @@ header .subheading .white {
 
 footer {
   background-color: #E1EEB9;
-  height: 20vh;
-  padding: 4vh 4vw;
+  height: fit-content;
+  padding: 2vh 4vw;
 }
-
-.navbar-btm p {
-  font-size: 1rem;
+footer .navbar-btm {
+  height: fit-content;
 }
-
-small {
+footer .navbar-btm li {
+  text-decoration: none;
+}
+footer .navbar-btm small {
   display: flex;
   justify-content: center;
   padding: 0.5vh 0;
 }
-
-.text {
-  padding-top: 4vh;
+footer .text {
+  margin-top: 50px;
+  text-align: center;
+  bottom: 0;
 }
-
-.disclaimer {
+footer .text .disclaimer {
   color: gray;
 }
-
-a {
+footer .text a {
   color: black;
   text-decoration: none;
 }
-a:hover {
+footer .text a:hover {
   color: #66A2AF;
   text-decoration: underline;
 }
@@ -404,10 +448,15 @@ a:hover {
 }
 
 #bubble-blue2 {
-  position: relative; /* Position relative to the viewport */
-  right: 30px; /* Start off-screen */
-  top: 70%; /* Center vertically */
-  transform: translateY(-50%); /* Adjust for vertical centering */
-  z-index: -1; /* Ensure it’s above other elements */
+  position: relative;
+  /* Position relative to the viewport */
+  right: 30px;
+  /* Start off-screen */
+  top: 70%;
+  /* Center vertically */
+  transform: translateY(-50%);
+  /* Adjust for vertical centering */
+  z-index: -1;
+  /* Ensure it’s above other elements */
   overflow: hidden;
 }/*# sourceMappingURL=style.css.map */

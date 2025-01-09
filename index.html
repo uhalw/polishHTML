@@ -13,20 +13,29 @@
 </head>
 
 <body>
+    <!------------>
     <!-- Navbar -->
+    <!------------>
+
     <section class="navbar">
         <div class="logo">
             <img src="./images/vector/logo-outline.svg" alt="Polish Logo">
-            <h2>Polish</h2>
-            <div class="textbtn">
-                <a href="test.html" class="button" alt="learn more">自我檢測</a>
-            </div>
+            <h2> <a href="index.html"/> Polish</h2>
+            <a href="#example">生活舉例</a>
+            <a href="#identity">身分選擇</a>
+            <a href="#post">相關文章</a>
+        </div>
+
+        <div class="textbtn">
+            <a href="test.html" class="button" alt="learn more">自我檢測</a>
         </div>
     </section>
 
+    <!------------>
     <!-- 開頭文字 -->
+    <!------------>
+
     <header>
-        <!-- 進場名言 -->
         <div class="quotes">
             <p>Polish isn't about perfection; it's about letting your true self shine through.
             </p>
@@ -70,8 +79,11 @@
 
         </section>
 
+        <!----------------------->
         <!-- 神經多樣性的日常舉例 -->
-        <section class="example">
+        <!----------------------->
+
+        <section class="example" id="example">
             <!-- h2 -->
             <div class="h2">
                 <h2>神經多樣性的日常舉例</h2>
@@ -107,7 +119,10 @@
             </div>
         </section>
 
+        <!-------------------->
         <!-- 你身邊也有這種人嗎 -->
+        <!-------------------->
+
         <section class="anyone">
 
             <div class="h2">
@@ -128,13 +143,12 @@
                 </div>
                 <p>～其實有更多能跟他相處愉快的方式～</p>
             </div>
-
         </section>
 
 
 
         <!--從身分角度選擇 -->
-        <section class="identity">
+        <section class="identity" id="identity">
 
 
             <!-- 插入H2 -->
@@ -165,20 +179,18 @@
                     <img src="./images/figure/colleague.svg" alt="同事">
                     <h3>同事</h3>
                     <p>同事同事同事同事同事</p>
-
                 </div>
-
             </div>
-
         </section>
 
-
-
+        <!---------->
         <!-- 相關文章 -->
-        <section class="post">
+        <!---------->
+
+        <section class="post" id="post">
             <div id="bubble-blue2">
-            <img src="./images/vector/bubble-blue2.svg" alt="Bubble 2">
-        </div>
+                <img src="./images/vector/bubble-blue2.svg" alt="Bubble 2">
+            </div>
             <div class="bubbles">
                 <img src="./images/vector/bubble-pink-ol1.svg" id="" alt="">
             </div>
@@ -212,19 +224,24 @@
         </section>
 
     </main>
+
+    <!---------->
     <!-- 頁尾 -->
+    <!---------->
+
     <footer>
         <div class="navbar-btm">
-            <a href="./ref.html">參考資料</a>
-            <p>All Images are from&ensp; <a
-                    href="https://www.vectorstock.com/royalty-free-vectors/vectors-by_Flashvector">Flashvector</a>
-
+            <li>
+                <a href="./ref.html">參考文獻</a>
+            </li>
+            <li>All Images are from&ensp;
+                <a href="https://www.vectorstock.com/royalty-free-vectors/vectors-by_Flashvector">Flashvector</a>
+            </li>
         </div>
         <div class="text">
-            <small class="disclaimer">※本網站僅供學生練習用作品，無任何商業營利用途。</small>
-
+            <small class="disclaimer">※本網站僅供學生練習用作品，無任何商業營利用途。</small><br>
             <small class=" contact">如有任何問題或建議，請寄信至： <a href="mailto:uhalw95@gmail.com">uhalw95@gmail.com</a>
-            </small>
+            </small><br>
             <small>Polish &copy; 2025 All Rights Reserved</small>
         </div>
     </footer>
@@ -232,6 +249,7 @@
     <!---------->
     <!-- 程式區 -->
     <!---------->
+
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>

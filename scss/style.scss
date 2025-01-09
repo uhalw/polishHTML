@@ -78,6 +78,8 @@ h2,
 // ------------------
 
 
+
+
 //導覽列樣式
 .navbar {
 	display: flex;
@@ -87,8 +89,10 @@ h2,
 	background-color: #fff;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 	color: #333;
-
 	position: fixed;
+	text-decoration: none;
+
+
 	/* Make the navbar sticky */
 	top: -80px;
 	/* Hidden initially */
@@ -97,7 +101,47 @@ h2,
 	z-index: 1000;
 	transition: top 0.3s ease-in-out;
 	/* Smooth slide */
+
 }
+
+/* Light Reflecting Effect for h2 */
+.logo h2 {
+
+	font-size: $h5-size;
+	color: #333;
+	font-weight: bold;
+	background: linear-gradient(100deg, $blue, $green);
+	background-size: 200% 100%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: light-reflect 6s linear infinite;
+
+	&:hover {
+		color: $green;
+	}
+}
+
+/* Keyframes for the Animation */
+@keyframes light-reflect {
+	0% {
+		background-position: 200% 10%;
+	}
+
+	100% {
+		background-position: -200% 100%;
+	}
+}
+
+.logo a {
+	color: #333;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+		color: $blue;
+	}
+}
+
 
 .logo {
 	display: flex;
@@ -110,29 +154,38 @@ h2,
 	width: 3vw;
 }
 
-.logo h2 {
-	font-size: $h5-size;
-	color: #333;
-}
 
-.button {
+.textbtn {
 	text-decoration: none;
 	text-align: center;
 	padding: 1vh 2vw;
 	border: .2vw solid $lightgreen;
 	border-radius: 4vh;
 	font-weight: 500;
-	color: $green;
+	right: 60px;
+	position: absolute;
 	transition: background-color 150ms ease-in-out, color 150ms ease-in-out, box-shadow 150ms ease-in-out;
-}
 
-.button:hover {
 
-	background-color: $green;
+	&:hover {
+		background-color: $green;
+		box-shadow: 0 4px 6px $lightgreen;
+a{
 	color: white;
-	box-shadow: 0 4px 6px $lightgreen;
 }
 
+	}
+
+}
+
+.textbtn a {
+	text-decoration: none;
+	color: $green ;
+
+	// &:hover {
+	// 	color: white;
+	// }
+}
 
 header {
 
@@ -239,9 +292,8 @@ header {
 	width: 100%;
 	max-width: 50vw;
 	display: block;
+	justify-content: center;
 
-justify-content: center;
-	
 	details {
 		height: 40vh;
 		max-width: 30vw;
@@ -307,14 +359,12 @@ justify-content: center;
 	text-align: center;
 	transition: .5s ease-out;
 
-
 	img {
 		height: 100%;
 		max-height: 20vh;
 		width: 100%;
 		max-width: 20vw;
 		transition: .5s ease-out;
-
 	}
 
 	&:hover {
@@ -326,7 +376,6 @@ justify-content: center;
 		img {
 			scale: 1.05;
 			transition: .5s ease;
-
 		}
 	}
 }
@@ -343,49 +392,47 @@ justify-content: center;
 
 footer {
 	background-color: $lightgreen;
-	height: 20vh;
-	padding: 4vh 4vw;
-}
+	height: fit-content;
+	padding: 2vh 4vw;
 
-// 置底左側
-.navbar-btm {
+	.navbar-btm {
+		height: fit-content;
 
-	p {
-		font-size: 1rem;
+		li {
+			text-decoration: none;
+		}
+
+		small {
+			display: flex;
+			justify-content: center;
+			padding: .5vh 0;
+		}
+	}
+
+	.text {
+		margin-top: 50px;
+		text-align: center;
+		bottom: 0;
+
+		.disclaimer {
+			color: gray;
+		}
+
+		a {
+			color: black;
+			text-decoration: none;
+
+			&:hover {
+				color: $blue;
+				text-decoration: underline;
+			}
+		}
 	}
 }
 
-
-small {
-	display: flex;
-	justify-content: center;
-	padding: .5vh 0;
-}
-
-.text {
-	padding-top: 4vh;
-}
-
-.disclaimer {
-	color: gray;
-}
-
-a {
-	color: black;
-	text-decoration: none;
-
-	&:hover {
-		color: $blue;
-		text-decoration: underline;
-
-	}
-}
-
-
-
-
-// 測驗
-
+////////
+//測驗//
+///////
 .question {
 	font-weight: 600;
 }
@@ -413,39 +460,45 @@ a {
 	background-color: #38a;
 }
 
-
-// 參考資料
+////////////
+// 參考資料//
+///////////
 .link-preview {
-    position: fixed; 
-    display: none;
-    width: 300px;
-    padding: 1rem;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px gainsboro;
-    z-index: 1000;
-    font-size: 0.9rem;
+	position: fixed;
+	display: none;
+	width: 300px;
+	padding: 1rem;
+	background-color: white;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px gainsboro;
+	z-index: 1000;
+	font-size: 0.9rem;
 
-    /* Position on the right side */
-    top: 50%; 
-    right: 20px;
-    transform: translateY(-50%); 
+	/* Position on the right side */
+	top: 50%;
+	right: 20px;
+	transform: translateY(-50%);
 }
 
 .link-container {
-    position: relative;
+	position: relative;
 }
 
-.link-container a:hover + .link-preview {
-    display: block;
+.link-container a:hover+.link-preview {
+	display: block;
 }
- 
-#bubble-blue2{
-		position: relative; /* Position relative to the viewport */
-		right: 30px; /* Start off-screen */
-		top: 70%; /* Center vertically */
-		transform: translateY(-50%); /* Adjust for vertical centering */
-		z-index: -1; /* Ensure it’s above other elements */
-		overflow: hidden;
-	}
+
+#bubble-blue2 {
+	position: relative;
+	/* Position relative to the viewport */
+	right: 30px;
+	/* Start off-screen */
+	top: 70%;
+	/* Center vertically */
+	transform: translateY(-50%);
+	/* Adjust for vertical centering */
+	z-index: -1;
+	/* Ensure it’s above other elements */
+	overflow: hidden;
+}
