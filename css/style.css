@@ -374,11 +374,12 @@ header .subheading .white {
   font-size: 1.2rem;
   background-image: linear-gradient(transparent 70%, rgba(230, 133, 176, 0.1) 30%);
 }
-.post h3 {
+.post h4 {
+  font-size: 1.8rem;
   width: fit-content;
   background-color: #E685B0;
   color: white;
-  padding: 2vh 5vw;
+  padding: 2vh 2vw;
   border-radius: 10px;
 }
 .post button {
