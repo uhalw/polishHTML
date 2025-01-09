@@ -389,6 +389,42 @@ header {
 }
 
 
+.post {
+	text-align: left;
+	padding: 10vh 2vw;
+
+	h5 {
+		padding: 0;
+		width: fit-content;
+		font-size: 1.2rem;
+		background-image: linear-gradient(transparent 70%, rgba($pink, 0.1) 30%);
+	}
+
+	h3 {
+		width: fit-content;
+		background-color: $pink ;
+color: white;
+		padding: 2vh 5vw;
+		border-radius: 10px;
+	}
+
+	button {
+		transition: box-shadow 300ms ease, color 300ms ease-in-out;
+		font-size: 1rem;
+		border-radius: 50px;
+		border: 3px solid $pink;
+		padding: 10px;
+		background-color: white;
+
+		&:hover {
+			color: white;
+			transition: .5s ease;
+			box-shadow: 0 0 40px 40px $pink inset;
+
+		}
+	}
+}
+
 // 置底
 
 footer {

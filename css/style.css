@@ -364,6 +364,37 @@ header .subheading .white {
   align-items: center;
 }
 
+.post {
+  text-align: left;
+  padding: 10vh 2vw;
+}
+.post h5 {
+  padding: 0;
+  width: fit-content;
+  font-size: 1.2rem;
+  background-image: linear-gradient(transparent 70%, rgba(230, 133, 176, 0.1) 30%);
+}
+.post h3 {
+  width: fit-content;
+  background-color: #E685B0;
+  color: white;
+  padding: 2vh 5vw;
+  border-radius: 10px;
+}
+.post button {
+  transition: box-shadow 300ms ease, color 300ms ease-in-out;
+  font-size: 1rem;
+  border-radius: 50px;
+  border: 3px solid #E685B0;
+  padding: 10px;
+  background-color: white;
+}
+.post button:hover {
+  color: white;
+  transition: 0.5s ease;
+  box-shadow: 0 0 40px 40px #E685B0 inset;
+}
+
 footer {
   background-color: #E1EEB9;
   height: fit-content;
