@@ -104,6 +104,30 @@ h2,
 
 }
 
+// 其他頁面導覽頁
+
+.navbarshow {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2vh 1vw;
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	color: #333;
+	position: fixed;
+	text-decoration: none;
+
+	top: 0;
+	width: 100%;
+	/* Full width */
+	z-index: 1000;
+	transition: top 0.3s ease-in-out;
+	/* Smooth slide */
+
+}
+
+
+
 // 測驗按鈕
 
 .logo h2 {
@@ -189,32 +213,11 @@ h2,
 }
 
 header {
-
-	.container,
-	.subheading {
-		display: block;
-		position: relative;
-		width: 100%;
-		max-width: 960px;
-		margin: 0 auto;
-		padding: 0 20px;
-		box-sizing: border-box;
-
-
-		.block {
-			background-color: $dark;
-			width: 100%;
-			height: 2px;
-			margin-bottom: 20px;
-		}
-
-		.white {
-			color: $green;
-		}
+	img {
+		width: 30vw;
 	}
 }
 
-// 首頁泡泡
 
 
 // 名言
@@ -226,7 +229,6 @@ header {
 
 	}
 }
-
 
 
 // 首圖
@@ -243,11 +245,11 @@ header {
 	}
 }
 
+// 首頁泡泡
 .bubbles {
 	position: absolute;
 	max-width: 100vw;
 	z-index: -1;
-
 }
 
 // 動態首圖
@@ -402,14 +404,14 @@ header {
 
 	h4 {
 		font-size: $h5-size;
-		width:auto;
+		width: auto;
 		// background-color: $pink ;
 		border-top: 2px solid $pink;
 		border-bottom: 2px solid $pink;
 		padding: 0 2vw;
 	}
 
-.post button{
+	.post button {
 		transition: box-shadow 300ms ease, color 300ms ease-in-out;
 		font-size: 1rem;
 		border-radius: 50px;
@@ -456,7 +458,8 @@ footer {
 			color: gray;
 		}
 
-		a {
+	
+		}	a {
 			color: black;
 			text-decoration: none;
 
@@ -464,7 +467,6 @@ footer {
 				color: $blue;
 				text-decoration: underline;
 			}
-		}
 	}
 }
 
