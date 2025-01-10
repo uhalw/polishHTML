@@ -390,7 +390,7 @@ header {
 
 
 .post {
-	text-align: left;
+	text-align: center;
 	padding: 10vh 2vw;
 
 	h5 {
@@ -402,14 +402,14 @@ header {
 
 	h4 {
 		font-size: $h5-size;
-		width: fit-content;
-		background-color: $pink ;
-		color: white;
-		padding: 2vh 2vw;
-		border-radius: 10px;
+		width:auto;
+		// background-color: $pink ;
+		border-top: 2px solid $pink;
+		border-bottom: 2px solid $pink;
+		padding: 0 2vw;
 	}
 
-	button {
+.post button{
 		transition: box-shadow 300ms ease, color 300ms ease-in-out;
 		font-size: 1rem;
 		border-radius: 50px;
@@ -483,20 +483,6 @@ footer {
 	display: block;
 }
 
-#submit {
-	font-family: sans-serif;
-	font-size: 20px;
-	background-color: #279;
-	color: #fff;
-	border: 0px;
-	border-radius: 3px;
-	padding: 20px;
-	margin-bottom: 20px;
-}
-
-#submit:hover {
-	background-color: #38a;
-}
 
 ////////////
 // 參考資料//

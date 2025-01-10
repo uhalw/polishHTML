@@ -365,7 +365,7 @@ header .subheading .white {
 }
 
 .post {
-  text-align: left;
+  text-align: center;
   padding: 10vh 2vw;
 }
 .post h5 {
@@ -376,13 +376,12 @@ header .subheading .white {
 }
 .post h4 {
   font-size: 1.8rem;
-  width: fit-content;
-  background-color: #E685B0;
-  color: white;
-  padding: 2vh 2vw;
-  border-radius: 10px;
+  width: auto;
+  border-top: 2px solid #E685B0;
+  border-bottom: 2px solid #E685B0;
+  padding: 0 2vw;
 }
-.post button {
+.post .post button {
   transition: box-shadow 300ms ease, color 300ms ease-in-out;
   font-size: 1rem;
   border-radius: 50px;
@@ -390,7 +389,7 @@ header .subheading .white {
   padding: 10px;
   background-color: white;
 }
-.post button:hover {
+.post .post button:hover {
   color: white;
   transition: 0.5s ease;
   box-shadow: 0 0 40px 40px #E685B0 inset;
@@ -439,21 +438,6 @@ footer .text a:hover {
 
 .answers label {
   display: block;
-}
-
-#submit {
-  font-family: sans-serif;
-  font-size: 20px;
-  background-color: #279;
-  color: #fff;
-  border: 0px;
-  border-radius: 3px;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-#submit:hover {
-  background-color: #38a;
 }
 
 .link-preview {
