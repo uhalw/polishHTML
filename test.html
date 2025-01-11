@@ -17,28 +17,30 @@
     <section class="navbarshow">
         <div class="logo">
             <img src="./images/vector/logo-outline.svg" alt="Polishy Logo">
-            <h2> <a href="index.html" /> Polishy</h2>
-            <a href="index.html#example">生活舉例</a>
-            <a href="index.html#identity">身分選擇</a>
-            <a href="index.html#post">相關文章</a>
+            <h2><a href="index.html">Polishy</a></h2>
+            <nav>
+                <a href="index.html#example">生活舉例</a>
+                <a href="index.html#identity">身分選擇</a>
+                <a href="index.html#post">相關文章</a>
+            </nav>
         </div>
-
         <div class="textbtn">
-            <a href="test.html" class="button" alt="learn more">自我檢測</a>
+            <a href="test.html" class="button">自我檢測</a>
         </div>
     </section>
 
     <div class="h2">
-        <img src="./images/vector/decor-yellow-long.svg" alt="">
+        <img src="./images/vector/decor-yellow-long.svg" alt="裝飾圖示">
         <h2>參考資料</h2>
     </div>
 
+    <h3>成人ADHD自填量表 (ASRS) 症狀檢核表</h3>
     <p>
-        您好，此測驗「成人自填量表 (ASRS) 症狀檢核表」引用自
-        <a href="https://www.hcp.med.harvard.edu/ncs/ftpdir/adhd/adhd/Old%20Versions/18Q-Chinese-Traditional.pdf">哈佛</a>
-        <br>
-        此問卷大約需花五分鐘完成，檢測結果僅為參考用，如需要專業協助請洽相關醫療單位。
+        此測驗引用自<a
+            href="https://www.hcp.med.harvard.edu/ncs/ftpdir/adhd/adhd/Old%20Versions/18Q-Chinese-Traditional.pdf">哈佛大學之文件</a>。
+        回答問題時請選擇最能描述你過去六個月中的感受與行為的頻率。大約需花五分鐘完成，檢測結果僅為參考用，如需要專業協助請洽相關醫療單位。
     </p>
+
     <form id="quiz">
         <!-- Part A Questions -->
         <h4>Part A</h4>
@@ -49,9 +51,10 @@
                 <label><input type="radio" name="question1" value="1"> 幾乎沒有</label>
                 <label><input type="radio" name="question1" value="2"> 有時候</label>
                 <label><input type="radio" name="question1" value="3"> 常常會有</label>
-                <label><input type="radio" name="question1" value="4"> 總是會有</label>
+                <label><input type="radio" name="question1" value="4"> 非常頻繁</label>
             </div>
         </div>
+
         <div class="question" data-part="A">
             <label>2. 當正在做枯燥或重複性的工作時，你多常有持續專注的困難？</label>
             <div class="options">
@@ -59,10 +62,81 @@
                 <label><input type="radio" name="question2" value="1"> 幾乎沒有</label>
                 <label><input type="radio" name="question2" value="2"> 有時候</label>
                 <label><input type="radio" name="question2" value="3"> 常常會有</label>
-                <label><input type="radio" name="question2" value="4"> 總是會有</label>
+                <label><input type="radio" name="question2" value="4"> 非常頻繁</label>
             </div>
         </div>
-        <!-- Add the rest of Part A questions similarly -->
+
+        <div class="question" data-part="A">
+            <label>3. 即使有人直接對你說話，你會多常有困難專注於別人跟你講話的內容？</label>
+            <div class="options">
+                <label><input type="radio" name="question3" value="0" required> 從來沒有</label>
+                <label><input type="radio" name="question3" value="1"> 幾乎沒有</label>
+                <label><input type="radio" name="question3" value="2"> 有時候</label>
+                <label><input type="radio" name="question3" value="3"> 常常會有</label>
+                <label><input type="radio" name="question3" value="4"> 非常頻繁</label>
+            </div>
+        </div>
+        <div class="question" data-part="A">
+            <label>4. 一旦完成任何計劃中最具挑戰的部分之後，你多常有完成計劃最後細節的困難？</label>
+            <div class="options">
+                <label><input type="radio" name="question4" value="0" required> 從來沒有</label>
+                <label><input type="radio" name="question4" value="1"> 幾乎沒有</label>
+                <label><input type="radio" name="question4" value="2"> 有時候</label>
+                <label><input type="radio" name="question4" value="3"> 常常會有</label>
+                <label><input type="radio" name="question4" value="4"> 非常頻繁</label>
+            </div>
+        </div>
+        <div class="question" data-part="A">
+            <label>5. 當必須從事需要有組織規劃性的任務時，你會多常有困難井然有序地去做？</label>
+            <div class="options">
+                <label><input type="radio" name="question5" value="0" required> 從來沒有</label>
+                <label><input type="radio" name="question5" value="1"> 幾乎沒有</label>
+                <label><input type="radio" name="question5" value="2"> 有時候</label>
+                <label><input type="radio" name="question5" value="3"> 常常會有</label>
+                <label><input type="radio" name="question5" value="4"> 非常頻繁</label>
+            </div>
+        </div>
+        <div class="question" data-part="A">
+            <label>6. 當有一件需要多費心思考的工作時，你會多常逃避或是延後開始去做？</label>
+            <div class="options">
+                <label><input type="radio" name="question6" value="0" required> 從來沒有</label>
+                <label><input type="radio" name="question6" value="1"> 幾乎沒有</label>
+                <label><input type="radio" name="question6" value="2"> 有時候</label>
+                <label><input type="radio" name="question6" value="3"> 常常會有</label>
+                <label><input type="radio" name="question6" value="4"> 非常頻繁</label>
+            </div>
+        </div>
+        <div class="question" data-part="A">
+            <label>7. 在家裡或是在工作時，你會多常沒有把東西放對地方或是找不到東西？</label>
+            <div class="options">
+                <label><input type="radio" name="question7" value="0" required> 從來沒有</label>
+                <label><input type="radio" name="question7" value="1"> 幾乎沒有</label>
+                <label><input type="radio" name="question7" value="2"> 有時候</label>
+                <label><input type="radio" name="question7" value="3"> 常常會有</label>
+                <label><input type="radio" name="question7" value="4"> 非常頻繁</label>
+            </div>
+        </div>
+        <div class="question" data-part="A">
+            <label>8. 你會多常因身旁的活動或聲音而分心？</label>
+            <div class="options">
+                <label><input type="radio" name="question8" value="0" required> 從來沒有</label>
+                <label><input type="radio" name="question8" value="1"> 幾乎沒有</label>
+                <label><input type="radio" name="question8" value="2"> 有時候</label>
+                <label><input type="radio" name="question8" value="3"> 常常會有</label>
+                <label><input type="radio" name="question8" value="4"> 非常頻繁</label>
+            </div>
+        </div>
+
+        <div class="question" data-part="A">
+            <label>9. 你會多常有問題去記得約會或是必須要做的事？</label>
+            <div class="options">
+                <label><input type="radio" name="question9" value="0" required> 從來沒有</label>
+                <label><input type="radio" name="question9" value="1"> 幾乎沒有</label>
+                <label><input type="radio" name="question9" value="2"> 有時候</label>
+                <label><input type="radio" name="question9" value="3"> 常常會有</label>
+                <label><input type="radio" name="question9" value="4"> 非常頻繁</label>
+            </div>
+        </div>
 
         <!-- Part B Questions -->
         <h4>Part B</h4>
@@ -73,25 +147,99 @@
                 <label><input type="radio" name="question10" value="1"> 幾乎沒有</label>
                 <label><input type="radio" name="question10" value="2"> 有時候</label>
                 <label><input type="radio" name="question10" value="3"> 常常會有</label>
-                <label><input type="radio" name="question10" value="4"> 總是會有</label>
+                <label><input type="radio" name="question10" value="4"> 非常頻繁</label>
             </div>
         </div>
         <div class="question" data-part="B">
             <label>11. 你會多常在開會時或在其他被期待坐好的場合中離開座位？</label>
             <div class="options">
-                <label><input type="radio" name="question11" value="0" required> </label>
+                <label><input type="radio" name="question11" value="0" required>從來沒有 </label>
                 <label><input type="radio" name="question11" value="1"> 幾乎沒有</label>
                 <label><input type="radio" name="question11" value="2"> 有時候</label>
                 <label><input type="radio" name="question11" value="3"> 常常會有</label>
-                <label><input type="radio" name="question11" value="4"> 總是會有</label>
+                <label><input type="radio" name="question11" value="4"> 非常頻繁</label>
             </div>
         </div>
-        <!-- Add the rest of Part B questions similarly -->
+        <div class="question" data-part="B">
+            <label>12. 你會多常覺得靜不下來或煩躁不安？</label>
+            <div class="options">
+                <label><input type="radio" name="question12" value="0" required> 從來沒有</label>
+                <label><input type="radio" name="question12" value="1"> 幾乎沒有</label>
+                <label><input type="radio" name="question12" value="2"> 有時候</label>
+                <label><input type="radio" name="question12" value="3"> 常常會有</label>
+                <label><input type="radio" name="question12" value="4"> 非常頻繁</label>
+            </div>
+        </div>
+        <div class="question" data-part="B">
+            <label>13. 當有自己獨處的時間時，你會多常覺得有困難使自己平靜和放鬆？</label>
+            <div class="options">
+                <label><input type="radio" name="question13" value="0" required> 從來沒有</label>
+                <label><input type="radio" name="question13" value="1"> 幾乎沒有</label>
+                <label><input type="radio" name="question13" value="2"> 有時候</label>
+                <label><input type="radio" name="question13" value="3"> 常常會有</label>
+                <label><input type="radio" name="question13" value="4"> 非常頻繁</label>
+            </div>
+        </div>
+        <div class="question" data-part="B">
+            <label>14. 你會多常像被馬達所驅動一樣，覺得自己過度地活躍，不得不做事情？</label>
+            <div class="options">
+                <label><input type="radio" name="question14" value="0" required> 從來沒有</label>
+                <label><input type="radio" name="question14" value="1"> 幾乎沒有</label>
+                <label><input type="radio" name="question14" value="2"> 有時候</label>
+                <label><input type="radio" name="question14" value="3"> 常常會有</label>
+                <label><input type="radio" name="question14" value="4"> 非常頻繁</label>
+            </div>
+        </div>
+        <div class="question" data-part="B">
+            <label>15. 在社交場合中，你會多常發現自己話講得太多？</label>
+            <div class="options">
+                <label><input type="radio" name="question15" value="0" required> 從來沒有</label>
+                <label><input type="radio" name="question15" value="1"> 幾乎沒有</label>
+                <label><input type="radio" name="question15" value="2"> 有時候</label>
+                <label><input type="radio" name="question15" value="3"> 常常會有</label>
+                <label><input type="radio" name="question15" value="4"> 非常頻繁</label>
+            </div>
+        </div>
+        <div class="question" data-part="B">
+            <label>16. 當與他人交談時，你會多常在別人還沒把話講完前就插嘴或接話替對方把話講完？</label>
+            <div class="options">
+                <label><input type="radio" name="question16" value="0" required> 從來沒有</label>
+                <label><input type="radio" name="question16" value="1"> 幾乎沒有</label>
+                <label><input type="radio" name="question16" value="2"> 有時候</label>
+                <label><input type="radio" name="question16" value="3"> 常常會有</label>
+                <label><input type="radio" name="question16" value="4"> 非常頻繁</label>
+            </div>
+        </div>
+        <div class="question" data-part="B">
+            <label>17. 在需要輪流排隊的場合時，你會多常有困難輪流等待？</label>
+            <div class="options">
+                <label><input type="radio" name="question17" value="0" required> 從來沒有</label>
+                <label><input type="radio" name="question17" value="1"> 幾乎沒有</label>
+                <label><input type="radio" name="question17" value="2"> 有時候</label>
+                <label><input type="radio" name="question17" value="3"> 常常會有</label>
+                <label><input type="radio" name="question17" value="4"> 非常頻繁</label>
+            </div>
+        </div>
+        <div class="question" data-part="B">
+            <label>18. 你會多常在別人忙碌時打斷別人？</label>
+            <div class="options">
+                <label><input type="radio" name="question18" value="0" required> 從來沒有</label>
+                <label><input type="radio" name="question18" value="1"> 幾乎沒有</label>
+                <label><input type="radio" name="question18" value="2"> 有時候</label>
+                <label><input type="radio" name="question18" value="3"> 常常會有</label>
+                <label><input type="radio" name="question18" value="4"> 非常頻繁</label>
+            </div>
+        </div>
 
-        <button type="button" id="submit">Submit</button>
     </form>
+    <div class="container">
+        <button type="button" id="submit">送出結果</button>
+    </div>
 
     <div class="results" id="results"></div>
+
+
+
     <!---------->
     <!-- 頁尾 -->
     <!---------->
@@ -118,20 +266,25 @@
     <!---------->
     <!-- JS程式區 -->
     <!---------->
+
     <script>
         document.getElementById('submit').addEventListener('click', function () {
             const form = document.getElementById('quiz');
             const resultsContainer = document.getElementById('results');
             const questions = form.querySelectorAll('.question');
             let scoreA = 0, scoreB = 0, countA = 0, countB = 0;
-
+            let allAnswered = true;  // Flag to track if all questions are answered
+    
             // Calculate scores for Part A and Part B
             questions.forEach(question => {
-                const input = question.querySelector('input:checked');
-                if (!input) return; // Skip if no answer is selected
+                const input = question.querySelector('input[type="radio"]:checked');
+                if (!input) {
+                    allAnswered = false;  // Set flag to false if a question is not answered
+                    return;
+                }
                 const value = parseInt(input.value, 10);
                 const part = question.getAttribute('data-part');
-
+    
                 if (part === 'A') {
                     scoreA += value;
                     countA++;
@@ -140,18 +293,38 @@
                     countB++;
                 }
             });
-
-            // Calculate 5-degree ratings
-            const ratingA = Math.round((scoreA / (countA * 4)) * 4);
-            const ratingB = Math.round((scoreB / (countB * 4)) * 4);
-
+    
+            if (!allAnswered) {
+                alert("請回答所有問題！");
+                return; 
+            }
+    
+            // Total scores
+            const totalScore = scoreA + scoreB;
+    
+            // ADHD Evaluation based on total score
+            let adhdMessage = '';
+            if (totalScore <= 16) {
+                adhdMessage = "不太可能有ADHD";
+            } else if (totalScore <= 23) {
+                adhdMessage = "很可能有ADHD";
+            } else {
+                adhdMessage = "非常可能有ADHD";
+            }
+    
             // Display the results
             resultsContainer.innerHTML = `
-                Part A 總分: ${scoreA}/${countA * 4}<br>
-                Part B 總分: ${scoreB}/${countB * 4}
+                Part A 總分: ${scoreA}<br>
+                Part B 總分: ${scoreB}<br>
+                總計分數: ${totalScore}<br>
+                評估結果: ${adhdMessage}<br>
+                Part A 得分與不專心狀況為主，Part B 得分與過動、衝動傾向為主。<br>
+                如果分數評估結果為23分以上，建議可洽醫療單位做更詳細評估。
             `;
         });
     </script>
+
+
 
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>

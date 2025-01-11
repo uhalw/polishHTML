@@ -8,12 +8,15 @@ a,
 summary,
 details,
 button,
-label, small, head, footer {
+label,
+small,
+head,
+footer {
     font-family: "Kiwi Maru", serif;
     font-weight: $regular;
     list-style: unset;
     text-decoration: none;
-color: black;
+    color: black;
 }
 
 
