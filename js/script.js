@@ -46,7 +46,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-
     // Messy section animations
     gsap.timeline({
         scrollTrigger: {
@@ -61,15 +60,16 @@ document.addEventListener("DOMContentLoaded", () => {
         .fromTo(".messy img:nth-child(3)", { opacity: 0, x: -10 }, { opacity: 1, x: 0, duration: 1 })
         .fromTo(".messy img:nth-child(4)", { opacity: 0, x: 10 }, { opacity: 1, x: 0, duration: 1 });
 
-    // Figure section animations
+    // Figure 
     gsap.timeline({
         scrollTrigger: {
             trigger: "#front",
             start: "top 80%",
             end: "bottom top",
             toggleActions: "play none none reverse",
-            markers: false
-        }
+            markers: false,
+        },
+        repeat: -1,
     })
         .fromTo(".figure img:nth-child(1)", { opacity: 1 }, { opacity: 0, duration: 1 }, "-=0.5")
         .fromTo(".figure img:nth-child(2)", { opacity: 0 }, { opacity: 1, duration: 1 })

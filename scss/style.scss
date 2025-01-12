@@ -306,36 +306,44 @@ header {
 
 
 // 首圖
-#front {
+
+section #front {
 	display: flex;
 	padding: 10vh 5vw;
 	justify-content: space-between;
 	align-items: center;
 	position: relative;
-
-	img {
-		width: 100%;
-		max-width: 20vw;
-	}
+	height: 100vh;
 }
 
 // 首頁泡泡
 .bubbles {
 	position: absolute;
 	max-width: 100vw;
+	min-height: 20vh;
 	z-index: -1;
 }
 
-// 動態首圖
-.figure {
-	position: relative;
-	padding: 20vh 10vw;
 
-	img {
-		position: absolute;
-		top: 0;
-		left: 50%;
-	}
+// 首頁字卡
+.frontcard {
+	display: flex;
+	justify-content: space-between;
+	padding: 4vh 5vw 10vh 2vw;
+}
+
+.fronttext {
+	font-weight: 300;
+	display: block;
+	padding-top: 5vh;
+	padding-right: 2vw;
+	width: 40vw;
+}
+
+// 動態首圖
+.figure img {
+	position: absolute;
+	height: 50vh;
 
 	img:nth-child(1) {
 		z-index: 1;
@@ -355,6 +363,7 @@ header {
 		left: 50%;
 	}
 }
+
 
 // 舉例
 

@@ -41,13 +41,12 @@ h5 {
 
 p {
   font-size: 1.2rem;
+  font-weight: 300;
 }
 
 img {
   max-width: 100%;
   height: auto;
-  width: auto\9 ;
-  /* ie8 */
 }
 
 .white {
@@ -303,44 +302,51 @@ header img {
   justify-content: center;
 }
 
-#front {
+section #front {
   display: flex;
   padding: 10vh 5vw;
   justify-content: space-between;
   align-items: center;
   position: relative;
-}
-#front img {
-  width: 100%;
-  max-width: 20vw;
+  height: 100vh;
 }
 
 .bubbles {
   position: absolute;
   max-width: 100vw;
+  min-height: 20vh;
   z-index: -1;
 }
 
-.figure {
-  position: relative;
-  padding: 20vh 10vw;
+.frontcard {
+  display: flex;
+  justify-content: space-between;
+  padding: 4vh 5vw 10vh 2vw;
 }
+
+.fronttext {
+  font-weight: 300;
+  display: block;
+  padding-top: 5vh;
+  padding-right: 2vw;
+  width: 40vw;
+}
+
 .figure img {
   position: absolute;
-  top: 0;
-  left: 50%;
+  height: 50vh;
 }
-.figure img:nth-child(1) {
+.figure img img:nth-child(1) {
   z-index: 1;
 }
-.figure img:nth-child(2) {
+.figure img img:nth-child(2) {
   z-index: 2;
 }
-.figure img:nth-child(3) {
+.figure img img:nth-child(3) {
   z-index: 3;
   left: 50%;
 }
-.figure img:nth-child(4) {
+.figure img img:nth-child(4) {
   z-index: 4;
   left: 50%;
 }
