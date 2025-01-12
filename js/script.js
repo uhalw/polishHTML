@@ -1,12 +1,27 @@
-// Ensure DOM content is fully loaded
 document.addEventListener("DOMContentLoaded", () => {
+    // Ensure ScrollTrigger plugin is registered once
+    gsap.registerPlugin(ScrollTrigger);
+
     // GSAP animations for headings and text
     gsap.from(".heading", { duration: 0.8, opacity: 0, x: 30, delay: 0.2 });
     gsap.from(".subheading", { duration: 1, opacity: 0, x: -30, delay: 0.6 });
     gsap.from(".paragraph", { duration: 1, opacity: 0, y: 20, delay: 1 });
     gsap.from(".block", { duration: 1, opacity: 0, y: 10, delay: 1.6 });
 
-    // Bubble animations (unique effects)
+    // GSAP animation to fade out .quotes on scroll
+    gsap.to(".quotes", {
+        opacity: 0,
+        scrollTrigger: {
+            trigger: ".quotes",
+            start: "top center",
+            end: "bottom top",
+            scrub: true,
+        }
+    });
+
+
+
+    // Bubble animations with yoyo effect
     const bubbleTimeline = gsap.timeline({ repeat: -1, yoyo: true });
     bubbleTimeline
         .to(".bubbles img:nth-child(1)", {
@@ -24,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
             opacity: 0.7,
             scale: 1.1,
             ease: "back.out(1.7)"
-        }, "<") // Start this animation at the same time as the previous one
+        }, "<") // Start at the same time as the previous animation
         .to(".bubbles img:nth-child(3)", {
             duration: 6,
             y: -30,
@@ -44,9 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-
-
-    // Messy section animations
+    // Messy section animations on scroll
     gsap.timeline({
         scrollTrigger: {
             trigger: ".anyone",
@@ -60,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .fromTo(".messy img:nth-child(3)", { opacity: 0, x: -10 }, { opacity: 1, x: 0, duration: 1 })
         .fromTo(".messy img:nth-child(4)", { opacity: 0, x: 10 }, { opacity: 1, x: 0, duration: 1 });
 
-    // Figure 
+    // Figure image animations on scroll
     gsap.timeline({
         scrollTrigger: {
             trigger: "#front",
@@ -75,36 +88,31 @@ document.addEventListener("DOMContentLoaded", () => {
         .fromTo(".figure img:nth-child(2)", { opacity: 0 }, { opacity: 1, duration: 1 })
         .fromTo(".figure img:nth-child(3)", { opacity: 0 }, { opacity: 1, duration: 1 })
         .fromTo(".figure img:nth-child(4)", { opacity: 0 }, { opacity: 1, duration: 1 });
-});
 
-document.addEventListener("DOMContentLoaded", () => {
-
-    // GSAP animation for #bubble-blue2
+    // Bubble animation for #bubble-blue2
     gsap.from("#bubble-blue2 img", {
         duration: 6,
         opacity: 1,
         scale: 0.8,
         x: 600,
-        y: 60,   // Start from above
+        y: 60,
         ease: "power3.inOut",
-        delay: 2   // Start after a short delay
+        delay: 2
     });
 
-    // Add continuous floating effect
+    // Continuous floating effect for #bubble-blue2
     gsap.to("#bubble-blue2 img", {
         duration: 4,
         scale: 1.2,
         x: 400,
-        y: 90,    // Make it float up and down
-        repeat: -1, // Repeat infinitely
-        yoyo: true, // Alternate the direction
+        y: 90,
+        repeat: -1,
+        yoyo: true,
         ease: "sine.inOut",
-        delay: 1    // Start the floating effect after initial animation
+        delay: 1
     });
-});
 
-// about popup
-document.addEventListener("DOMContentLoaded", () => {
+    // About popup functionality
     const openPopup = document.querySelector("#openPopup"); // Button to open the popup
     const closePopup = document.querySelector("#popup .close"); // Close button inside the popup
     const popup = document.querySelector("#popup"); // Popup container
@@ -126,3 +134,12 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+function showMore() {
+    var div = document.getElementById("myShow");
+    if (div.style.display === "none" || div.style.display === "") {
+        div.style.display = "block";
+    } else {
+        div.style.display = "none";
+    }
+}
