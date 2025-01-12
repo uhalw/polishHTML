@@ -13,27 +13,46 @@
 </head>
 
 <body>
+    <section class="navbarshow">        <div class="logo">
+        <img src="./images/vector/logo-outline.svg" alt="Polishy Logo">
+        <h2> <a href="index.html" /> Polishy</h2>
+        <a href="#example">生活舉例</a>
+        <a href="#identity">身分選擇</a>
+        <a href="#post">相關文章</a>
 
-    <section class="navbarshow">
-        <div class="logo">
-            <img src="./images/vector/logo-outline.svg" alt="Polishy Logo">
-            <h2><a href="index.html">Polishy</a></h2>
-            <nav>
-                <a href="index.html#example">生活舉例</a>
-                <a href="index.html#identity">身分選擇</a>
-                <a href="index.html#post">相關文章</a>
-            </nav>
+        <!-- Button to open the popup -->
+        <button id="openPopup">關於 Polishy</button>
+        <!-- Popup container -->
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <!-- <span id="closePopup" class="close">&times;</span> -->
+                <h2>關於Polishy</h2>
+                <p>Polishy 是一個介紹神經多樣性（Neurodiversity）
+                    的平台，「神經多樣性」強調每個人神經系統的運作方式都有獨特性，如自閉症、ADHD、學習障礙等特質。這些差異並非缺陷，而是多元化的存在。希望透過此平台提升大衆對神經多樣性的認知與理解，減少因缺乏相關知識而導致的資訊落差與誤解。
+                    <br>
+                    <br>
+                    Polishy 的發音為「波莉許」，是由 Polish（打磨、拋光）和
+                    Shy（害羞、緊張）結合而成的英文創意詞。我們希望每一塊內向、羞於表達的璞玉，都能找到屬於自己的生活方式。即使擁有非典型的特質，也能在打磨拋光後閃閃發亮。
+                </p>
+                <button id="closePopup" class="close">關閉視窗</button>
+            </div>
         </div>
-        <div class="textbtn">
-            <a href="test.html" class="button">自我檢測</a>
-        </div>
+    </div>
+
+    <div class="textbtn">
+        <a href="test.html" class="button" alt="learn more">自我檢測</a>
+    </div>
     </section>
 
     <div class="h2">
         <img src="./images/vector/decor-yellow-long.svg" alt="裝飾圖示">
-        <h2>參考資料</h2>
+        <h2>參考資料｜Polishy｜你的神經多樣性導覽員</h2>
     </div>
 
+    <main>
+
+
+<!-- 主要內容 -->
     <h3>成人ADHD自填量表 (ASRS) 症狀檢核表</h3>
     <p>
         此測驗引用自<a
@@ -239,7 +258,7 @@
     <div class="results" id="results"></div>
 
 
-
+</main>
     <!---------->
     <!-- 頁尾 -->
     <!---------->

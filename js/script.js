@@ -44,6 +44,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+
+
+
     // Messy section animations
     gsap.timeline({
         scrollTrigger: {
@@ -80,9 +83,9 @@ document.addEventListener("DOMContentLoaded", () => {
     gsap.from("#bubble-blue2 img", {
         duration: 6,
         opacity: 1,
-        scale: 2,
+        scale: 0.8,
         x: 600,
-        y: -10,   // Start from above
+        y: 60,   // Start from above
         ease: "power3.inOut",
         delay: 2   // Start after a short delay
     });
@@ -90,12 +93,36 @@ document.addEventListener("DOMContentLoaded", () => {
     // Add continuous floating effect
     gsap.to("#bubble-blue2 img", {
         duration: 4,
-        scale: 1.6,
+        scale: 1.2,
         x: 400,
-        y: 20,    // Make it float up and down
+        y: 90,    // Make it float up and down
         repeat: -1, // Repeat infinitely
         yoyo: true, // Alternate the direction
         ease: "sine.inOut",
         delay: 1    // Start the floating effect after initial animation
+    });
+});
+
+// about popup
+document.addEventListener("DOMContentLoaded", () => {
+    const openPopup = document.querySelector("#openPopup"); // Button to open the popup
+    const closePopup = document.querySelector("#popup .close"); // Close button inside the popup
+    const popup = document.querySelector("#popup"); // Popup container
+
+    // Open popup
+    openPopup.addEventListener("click", () => {
+        popup.style.display = "flex"; // Show the popup
+    });
+
+    // Close popup
+    closePopup.addEventListener("click", () => {
+        popup.style.display = "none"; // Hide the popup
+    });
+
+    // Close popup when clicking outside the content
+    popup.addEventListener("click", (e) => {
+        if (e.target === popup) {
+            popup.style.display = "none"; // Hide the popup
+        }
     });
 });
