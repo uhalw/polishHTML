@@ -12,11 +12,11 @@ label,
 small,
 head,
 footer {
-  font-family: "Kiwi Maru", serif;
+  font-family: "Kiwi Maru", "Noto Sans TC", sans-serif;
   font-weight: 400;
   list-style: unset;
   text-decoration: none;
-  color: black;
+  color: rgb(53, 53, 53);
 }
 
 h1 {
@@ -68,6 +68,11 @@ section {
 
 html {
   scroll-behavior: smooth;
+}
+
+a:hover {
+  color: #66A2AF;
+  text-decoration: underline;
 }
 
 button {

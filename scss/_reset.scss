@@ -12,11 +12,11 @@ label,
 small,
 head,
 footer {
-    font-family: "Kiwi Maru", serif;
+    font-family: "Kiwi Maru", "Noto Sans TC", sans-serif;
     font-weight: $regular;
     list-style: unset;
     text-decoration: none;
-    color: black;
+    color: rgb(53, 53, 53);
 }
 
 
@@ -74,4 +74,12 @@ section {
 
 html {
     scroll-behavior: smooth;
+}
+
+// 超連結hover
+
+a:hover{
+    color: $blue;
+    text-decoration: underline;
+
 }
