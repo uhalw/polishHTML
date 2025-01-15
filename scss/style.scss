@@ -818,7 +818,6 @@ footer {
 ///////////
 
 
-
 .link-preview {
 	position: fixed;
 	display: none;
@@ -891,18 +890,21 @@ form {
 		label {
 			font-size: $p-size;
 			display: block;
-			margin-bottom: 8px;
+			margin-bottom: 10px;
+			text-decoration: underline 5px $lightgreen;
 		}
 
 		.options {
 			display: flex;
 			flex-wrap: wrap;
-			gap: 10px;
+			gap: 20px;
+			margin-left: 20px;
+
 
 			label {
 				font-size: 1.1rem;
-				color: #333;
-
+				font-weight: 200;
+				text-decoration: none;
 				input {
 					margin-right: 10px;
 				}
@@ -940,13 +942,16 @@ form {
 #results {
 	margin-top: 20px;
 	padding: 20px;
-	background-color: #f9f9f9; // Light background
-	border: 1px solid #ddd; // Border for differentiation
 	border-radius: 8px;
 	font-family: 'Kiwi Maru', serif;
 	font-size: 16px;
 	color: #333;
+	text-align: center;
+
+	// background-color: #f9f9f9; // Light background
+	// border: 1px solid #ddd; // Border for differentiation
 }
+
 
 
 

@@ -792,16 +792,19 @@ form .question {
 form .question label {
   font-size: 1.2rem;
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+  text-decoration: underline 5px #E1EEB9;
 }
 form .question .options {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
+  margin-left: 20px;
 }
 form .question .options label {
   font-size: 1.1rem;
-  color: #333;
+  font-weight: 200;
+  text-decoration: none;
 }
 form .question .options label input {
   margin-right: 10px;
@@ -832,12 +835,11 @@ form .question .options label input {
 #results {
   margin-top: 20px;
   padding: 20px;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
   border-radius: 8px;
   font-family: "Kiwi Maru", serif;
   font-size: 16px;
   color: #333;
+  text-align: center;
 }
 
 .gs-reveal {
