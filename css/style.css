@@ -491,7 +491,7 @@ section #front {
   transition: background-color 0.5s ease-in-out;
 }
 .contentexample p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.5;
   text-align: center;
   margin-top: 10px;
@@ -504,6 +504,63 @@ section #front {
 }
 .contentexample a.via:hover {
   text-decoration: underline;
+}
+
+.learnPopup #openLearnPopup {
+  border: none;
+  border-radius: 0px;
+  background-color: transparent;
+}
+.learnPopup #openLearnPopup:hover {
+  background-color: #A4C629;
+  text-decoration: none;
+  box-shadow: none;
+  transform: none;
+}
+
+/* Popup content */
+.learnpopup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.learnpopup .learnpopup-content {
+  background: #fff;
+  padding-top: 4vh;
+  padding-bottom: 10vh;
+  border-radius: 10px;
+  width: 600px;
+  text-align: justify;
+  box-shadow: 0 4px 8px rgba(181, 181, 181, 0.2);
+  position: relative;
+}
+.learnpopup .learnpopup-content p {
+  margin: 40px;
+}
+
+/* Style for the close button */
+.learnpopup .close {
+  position: absolute;
+  cursor: pointer;
+  color: #333;
+  left: 240px;
+  transition: 0.5s ease-in-out;
+}
+.learnpopup .close:hover {
+  color: white;
+}
+.learnpopup .close .learnpopup-content button {
+  margin: 20px auto;
+  display: block;
+  width: 140px;
 }
 
 .reading,

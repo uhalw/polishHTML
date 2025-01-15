@@ -114,12 +114,30 @@
                         <h4>你有聽過神經多樣性嗎？</h4>
                         <p>第一次聽到可能以為這跟身體的神經系統有關，如果你是這樣想，恭喜答對！不過「神經多樣性」其實涵蓋更多的範圍跟定義，神經多樣性族群也生活在我們之間，人數可能比想像中還要更多。</p>
                     </div>
-                    <button onclick="showMore()">了解更多</button>
+
+                    <!-- Button to open the popup -->
+                    <button id="openLearnPopup">了解更多</button>
+                    <!-- Popup container -->
+                    <div id="learnpopup" class="learnpopup">
+                        <div class="learnpopup-content">
+                            <!-- <span id="closePopup" class="close">&times;</span> -->
+                            <p>神經多樣性（Neurodiversity）強調大腦發展的多樣性，認為ADHD和自閉症不應視為「障礙症」，而是行為特質的維度，這些特質與典型神經發展群體的環境不符。此觀念挑戰了傳統病理模型，指出將這些狀況視為障礙會低估神經多樣性個體的優勢，並可能導致汙名化與心理健康問題。神經多樣性強調環境適應，提倡透過改變社會結構來減少對這些個體的限制，並發掘他們的天賦與優勢，而非僅關注生物心理社會機制。該視角鼓勵神經多樣性個體參與生命故事的敘述，並創造友善環境來減少歧視與刻板印象。結合傳統診療方式與神經多樣性概念，有助於提升神經多樣性個體的生活品質（Sonuga-Barke
+                                & Thapar, 2021）。</p>
+                            <br>
+                            <p>
+                                參考文獻：
+                                Sonuga-Barke, E., & Thapar, A. (2021). The neurodiversity concept: is it helpful for
+                                clinicians and
+                                scientists? Lancet Psychiatry, 8(7), 559-561. (王雅萱，譯)
+                            </p>
+                            <button id="closeLearnPopup" class="close">關閉視窗</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <div id="myShow" style="display:none;">
+        <!-- <div id="myShow" style="display:none;">
             <p>根據Sonuga-Barke與Thapar（2021）所述，神經多樣性（Neurodiversity）強調大腦發展的多樣性，認為ADHD和自閉症不應視為「障礙症」，而是行為特質的維度，這些特質與典型神經發展群體的環境不符。此觀念挑戰了傳統病理模型，指出將這些狀況視為障礙會低估神經多樣性個體的優勢，並可能導致汙名化與心理健康問題。神經多樣性強調環境適應，提倡透過改變社會結構來減少對這些個體的限制，並發掘他們的天賦與優勢，而非僅關注生物心理社會機制。該視角鼓勵神經多樣性個體參與生命故事的敘述，並創造友善環境來減少歧視與刻板印象。結合傳統診療方式與神經多樣性概念，有助於提升神經多樣性個體的生活品質（Sonuga-Barke
                 & Thapar, 2021）。</p>
             <br>
@@ -128,7 +146,7 @@
                 Sonuga-Barke, E., & Thapar, A. (2021). The neurodiversity concept: is it helpful for clinicians and
                 scientists? Lancet Psychiatry, 8(7), 559-561. (王雅萱，譯)
             </p>
-        </div>
+        </div> -->
 
         <!----------------------->
         <!-- 神經多樣性的日常舉例 -->

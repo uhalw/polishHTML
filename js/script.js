@@ -163,3 +163,25 @@ gsap.utils.toArray(".gs-reveal").forEach((element) => {
         ease: "power2.out", // Smooth easing
     });
 });
+
+
+
+// About popup functionality
+const openLearnPopup = document.querySelector("#openLearnPopup");
+const closeLearnPopup = document.querySelector("#learnpopup .close");
+const learnpopup = document.querySelector("#learnpopup");
+
+// Toggle popup visibility
+const togglePopup = (isVisible) => {
+    learnpopup.style.display = isVisible ? "flex" : "none";
+};
+
+// Event listeners
+openLearnPopup.addEventListener("click", () => togglePopup(true)); // 點擊顯示彈跳視窗
+closeLearnPopup.addEventListener("click", () => togglePopup(false)); // 點擊關閉按鈕
+learnpopup.addEventListener("click", (e) => {
+    if (e.target === learnpopup) togglePopup(false); // 點擊背景關閉
+});
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") togglePopup(false); // 按 ESC 鍵關閉
+});
