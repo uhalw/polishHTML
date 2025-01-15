@@ -1,3 +1,4 @@
+@charset "UTF-8";
 h1,
 h2,
 h3,
@@ -154,7 +155,8 @@ h2 img,
   z-index: 1000;
 }
 
-.popup .popup-content {
+.popup-content,
+.learnpopup-content {
   background: #fff;
   padding-top: 4vh;
   padding-bottom: 10vh;
@@ -163,8 +165,10 @@ h2 img,
   text-align: justify;
   box-shadow: 0 4px 8px rgba(181, 181, 181, 0.2);
   position: relative;
+  transition: 1s ease-in-out;
 }
-.popup .popup-content p {
+.popup-content p,
+.learnpopup-content p {
   margin: 40px;
 }
 
@@ -519,31 +523,24 @@ section #front {
 }
 
 /* Popup content */
-.learnpopup {
+#learnpopup {
   display: none;
+  /* 初始狀態隱藏 */
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
-  z-index: 1000;
 }
 
-.learnpopup .learnpopup-content {
-  background: #fff;
-  padding-top: 4vh;
-  padding-bottom: 10vh;
-  border-radius: 10px;
-  width: 600px;
-  text-align: justify;
-  box-shadow: 0 4px 8px rgba(181, 181, 181, 0.2);
+#learnpopup .content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
   position: relative;
-}
-.learnpopup .learnpopup-content p {
-  margin: 40px;
 }
 
 /* Style for the close button */
@@ -755,7 +752,7 @@ footer a:hover {
   transform: translateY(-50%);
 }
 
-.link-container {
+main .link-container {
   position: relative;
 }
 
@@ -832,18 +829,15 @@ form .question .options label input {
   box-shadow: 0 0 40px 40px #A4C629 inset;
 }
 
-.results {
-  margin-top: 30px;
+#results {
+  margin-top: 20px;
   padding: 20px;
-  background-color: #fff;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
   border-radius: 8px;
-  font-size: 18px;
-  color: #333;
-  text-align: center;
   font-family: "Kiwi Maru", serif;
-  font-weight: 400;
-  list-style: unset;
-  text-decoration: none;
+  font-size: 16px;
+  color: #333;
 }
 
 .gs-reveal {

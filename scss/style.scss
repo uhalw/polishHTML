@@ -104,7 +104,8 @@ h2,
 	z-index: 1000;
 }
 
-.popup .popup-content {
+.popup-content,
+.learnpopup-content {
 	background: #fff;
 	padding-top: 4vh;
 	padding-bottom: 10vh;
@@ -113,6 +114,7 @@ h2,
 	text-align: justify;
 	box-shadow: 0 4px 8px rgba(181, 181, 181, 0.2);
 	position: relative;
+	transition: 1s ease-in-out;
 
 	p {
 		margin: 40px;
@@ -836,8 +838,9 @@ footer {
 
 }
 
-.link-container {
+main .link-container {
 	position: relative;
+	// padding-bottom: vh;
 }
 
 .link-container a:hover+.link-preview {
