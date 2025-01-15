@@ -27,7 +27,7 @@ button {
 }
 
 // h2樣式及裝飾
-h2,
+
 .h2 {
 	font-weight: $bold;
 	width: fit-content;
@@ -197,25 +197,30 @@ h2,
 	position: fixed;
 	text-decoration: none;
 
-	top: 0;
+	top: -80px;
 	width: 100%;
 	/* Full width */
 	z-index: 1000;
 	transition: top 0.3s ease-in-out;
 	/* Smooth slide */
 
+	/* Reset all margins for content inside the navbar */
+	&>* {
+		margin: 0;
+		/* Remove margin-block-start and margin-block-end */
+	}
 }
 
 
 
 // 測驗按鈕
 
-.logo h2 {
+#logoH2 {
 	font-size: $h5-size;
 	color: #333;
 	font-weight: bold;
 	background: linear-gradient(100deg, $blue, $green);
-	background-size: 200% 100%;
+	// background-size: 200% 100%;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	animation: light-reflect 6s linear infinite;
@@ -996,11 +1001,10 @@ form {
 	}
 }
 
-/* Apply animation to all h2, h3, h4 */
-h2,
+/* Apply animation to all  h3, h4 */
+
 h3,
 h4,
-.h2,
 p {
 	animation: fadeSlideUp 0.8s ease-in-out both;
 	transform-origin: bottom;
@@ -1008,7 +1012,7 @@ p {
 }
 
 /* Optionally, you can vary delay or duration */
-h2,
+
 .h2 {
 	animation-delay: 0.2s;
 }
@@ -1038,7 +1042,7 @@ h4 {
 	}
 }
 
-h2,
+
 h3,
 h4 {
 	opacity: 0;

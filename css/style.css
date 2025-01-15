@@ -91,7 +91,6 @@ button:hover {
   box-shadow: 0 0 40px 40px #A4C629 inset;
 }
 
-h2,
 .h2 {
   font-weight: 500;
   width: fit-content;
@@ -99,7 +98,6 @@ h2,
   justify-content: center;
   margin: 0 auto;
 }
-h2 img,
 .h2 img {
   height: 3.6rem;
   margin-top: 1vh;
@@ -228,25 +226,29 @@ h2 img,
   color: #333;
   position: fixed;
   text-decoration: none;
-  top: 0;
+  top: -80px;
   width: 100%;
   /* Full width */
   z-index: 1000;
   transition: top 0.3s ease-in-out;
   /* Smooth slide */
+  /* Reset all margins for content inside the navbar */
+}
+.navbarshow > * {
+  margin: 0;
+  /* Remove margin-block-start and margin-block-end */
 }
 
-.logo h2 {
+#logoH2 {
   font-size: 1.8rem;
   color: #333;
   font-weight: bold;
   background: linear-gradient(100deg, #66A2AF, #A4C629);
-  background-size: 200% 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: light-reflect 6s linear infinite;
 }
-.logo h2:hover {
+#logoH2:hover {
   color: #A4C629;
 }
 
@@ -866,11 +868,9 @@ form .question .options label input {
     transform: translateY(0);
   }
 }
-/* Apply animation to all h2, h3, h4 */
-h2,
+/* Apply animation to all  h3, h4 */
 h3,
 h4,
-.h2,
 p {
   animation: fadeSlideUp 0.8s ease-in-out both;
   transform-origin: bottom;
@@ -878,7 +878,6 @@ p {
 }
 
 /* Optionally, you can vary delay or duration */
-h2,
 .h2 {
   animation-delay: 0.2s;
 }
@@ -905,7 +904,6 @@ h4 {
     transform: translateY(0);
   }
 }
-h2,
 h3,
 h4 {
   opacity: 0;

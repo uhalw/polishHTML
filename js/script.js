@@ -48,15 +48,29 @@ document.addEventListener("DOMContentLoaded", () => {
             ease: "back.out(1.7)"
         }, "<");
 
+
+
     // Navbar show/hide on scroll
     const navbar = document.querySelector(".navbar");
+
+    let lastScrollY = window.scrollY; // Track the last scroll position
+
     document.addEventListener("scroll", () => {
-        if (window.scrollY > 50) {
-            navbar.style.top = "0"; // Show navbar
-        } else {
-            navbar.style.top = "-80px"; // Hide navbar
+        const currentScrollY = window.scrollY;
+
+        // If scrolling down and passed the 50px threshold, hide the navbar
+        if (currentScrollY > 50 && currentScrollY > lastScrollY) {
+            navbar.style.top = "-120px"; // Hide navbar when scrolling down
         }
+        // If scrolling up, show the navbar
+        else if (currentScrollY < lastScrollY) {
+            navbar.style.top = "0"; // Show navbar when scrolling up
+        }
+
+        // Update the lastScrollY to the current scroll position
+        lastScrollY = currentScrollY;
     });
+
 
     // Messy section animations on scroll
     gsap.timeline({
