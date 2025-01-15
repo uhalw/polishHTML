@@ -110,7 +110,7 @@
                 </div>
 
                 <div class="fronttext">
-                    <div class="text">
+                    <div class="text ">
                         <h4>你有聽過神經多樣性嗎？</h4>
                         <p>第一次聽到可能以為這跟身體的神經系統有關，如果你是這樣想，恭喜答對！不過「神經多樣性」其實涵蓋更多的範圍跟定義，神經多樣性族群也生活在我們之間，人數可能比想像中還要更多。</p>
                     </div>
@@ -140,33 +140,35 @@
                 <h2>神經多樣性的日常舉例</h2>
                 <img src="./images/vector/decor-leaf.svg" alt="decor-leaf">
             </div>
-            <div class="content">
+
+            <div class="contentexample">
                 <div class="reading">
                     <img src="./images/figure/reading.svg" alt="reading" class="reading">
-                    <details>
-                        <summary>閲讀障礙</summary>
+                    <div class="eg" onclick="showMore('readingContent')">閲讀障礙</div>
+                    <div id="readingContent" style="display:none;">
                         <p>閲讀障礙是指在閲讀上有困難，包含：讀字正確度、閲讀速度或流暢度、閲讀理解。「失讀症」是用來統稱這種類型個案，特徵為無法正確或流暢的認字，解碼能力不佳，拼音能力差，通常亦會伴隨閲讀障礙或是數學推理困難。
                         </p>
                         <a href="https://wd.vghtpe.gov.tw/PMREIP/Fpage.action?muid=8187&fid=8287" class="via"
                             alt="學習障礙介紹 | 臺北榮總醫院復健部兒童發展評估中心">via</a>
-                    </details>
+                    </div>
                 </div>
+
                 <div class="focus">
                     <img src="./images/figure/focus.svg" alt="focus" class="focus">
-
-                    <details>
-                        <summary>注意力不足</summary>
+                    <div class="eg" onclick="showMore('focusContent')">注意力不足</div>
+                    <div id="focusContent" style="display:none;">
                         <p>注意力不足通常是指作事時無法專心，專注力短暫無法持續，容易被它事分心，行事粗心大意，常常出錯， 常常遺忘帶需要用的物品，討厭或逃避需要用心去做的事，或是做事缺乏條理組織。
                         </p>
-                    </details>
+                    </div>
                 </div>
-                <div class="sleep"> <img src="./images/figure/sleep.svg" alt="sleep" class="sleep">
 
-                    <details>
-                        <summary>睡眠障礙</summary>
+                <div class="sleep">
+                    <img src="./images/figure/sleep.svg" alt="sleep" class="sleep">
+                    <div class="eg" onclick="showMore('sleepContent')">睡眠障礙</div>
+                    <div id="sleepContent" style="display:none;">
                         <p>睡眠障礙是指有入睡困難如擔心會失眠焦慮緊張；難以維持睡眠，常因為一點點聲響或光線就覺醒。睡眠品質不佳：主觀地認為睡不好，不能熟睡或頻頻做夢，或是雖然有睡覺，卻仍然沒有精神。半夜醒來也是睡眠障礙的一種。
                         </p>
-                    </details>
+                    </div>
                 </div>
             </div>
         </section>
@@ -175,14 +177,14 @@
         <!-- 你身邊也有這種人嗎 -->
         <!-------------------->
 
-        <section class="anyone">
+        <section class="anyone ">
 
             <div class="h2">
                 <h2><img src="./images/vector/you.svg" class="you" alt=" you">身邊也有這種人<img src="./images/vector/ma.svg"
                         class="ma" alt="ma"></h2>
             </div>
 
-            <div class="explain">
+            <div class="explain gs-reveal">
                 <p>覺得這個人的想法總是和他人不同<br>
                     很容易轉移話題 <br>
                     思想模式很跳動<br>
@@ -204,13 +206,13 @@
         <!-------------------->
         <!--從身分角度選擇 -->
         <!-------------------->
+
         <section class="identity" id="identity">
             <!-- 插入H2 -->
             <div class="h2">
                 <img src="./images/vector/decor-red2.svg" alt="decor-flower-red2">
                 <h2>怎麼跟該族群相處？</h2>
             </div>
-
             <div class="content">
                 <!-- 插入泡泡 -->
                 <div class="bubbles">
@@ -320,6 +322,7 @@
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
     <!-- Include ScrollTrigger Plugin -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <!-- JS -->

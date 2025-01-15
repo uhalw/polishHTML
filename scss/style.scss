@@ -15,6 +15,8 @@ button {
 	border: 3px solid $green;
 	padding: 10px;
 	background-color: white;
+	transition: .5s ease-in-out;
+
 
 	&:hover {
 		color: white;
@@ -32,7 +34,6 @@ h2,
 	display: flex;
 	justify-content: center;
 	margin: 0 auto;
-	/* Centers the element horizontally */
 
 	img {
 		height: $h1-size;
@@ -44,7 +45,7 @@ h2,
 .content {
 	display: flex;
 	justify-content: space-between;
-	max-width: 100vw;
+	width: 80vw;
 
 	img {
 		height: 100%;
@@ -472,35 +473,64 @@ section #front {
 	// 	/* Darker blue on hover */
 }
 
-// 舉例
+.contentexample {
+	display: flex;
+	align-items: start;
+	gap: 20px;
+	height: 60vh;
+	padding-bottom: 5vh;
+
+	img {
+		height: auto;
+		width: 300px;
+		margin-bottom: 10px;
+		display: block;
+	}
+
+	.eg {
+
+		font-family: "Kiwi Maru", serif;
+		font-size: $h3-size;
+		padding: 10px 15px;
+		background-image: linear-gradient(transparent 70%, rgba($green, 0.6) 30%);
+		cursor: pointer;
+		margin-bottom: 10px;
+		text-align: center;
+		transition: background-color 0.5s ease-in-out;
+
+
+	}
+
+	p {
+		font-size: 1rem;
+		line-height: 1.5;
+		text-align: center;
+		margin-top: 10px;
+	}
+
+	a.via {
+		font-size: 0.9rem;
+		color: $green;
+		margin-top: 10px;
+		text-align: left;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
 
 .reading,
 .focus,
 .sleep {
-	list-style-type: none;
-	font-size: $h4-size;
-	font-weight: 600;
-	text-align: center;
-	padding: 10px;
-	width: 100%;
-	max-width: 50vw;
-	display: block;
-	justify-content: space-between;
-
-
-
-	details {
-		height: 40vh;
-		max-width: 30vw;
-		background-color: $lightgreen;
-	}
-	
-	img {
-		height:40vh;
-	}
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 600px;
+	padding: 20px;
+	border-radius: 10px;
 }
-
-
 
 //困擾 
 
@@ -555,20 +585,21 @@ section #front {
 	border: 3px solid $pink;
 	border-radius: 10px;
 	width: 20vw;
-	height: 100%;
-	min-height: 20vh;
-	padding: 4vh 1vw;
+	height: 35vh;
+	padding: 2vh 1vw;
 	text-align: center;
 	transition: .5s ease-in;
 	align-items: start;
 	position: sticky;
 
 	h3 {
+		padding: 1px;
 		transition: .1s ease-in;
 
 	}
 
 	p {
+		// font-size: $h2-size;
 		display: none;
 		transition: 1s ease-out;
 		color: white;
@@ -678,7 +709,7 @@ footer {
 
 	.text {
 		margin-top: 50px;
-		text-align: center;
+		text-align: right;
 		bottom: 0;
 
 		.disclaimer {
@@ -846,4 +877,10 @@ form {
 	font-weight: $regular;
 	list-style: unset;
 	text-decoration: none;
+}
+
+.gs-reveal {
+	opacity: 0.9; // Hidden initially
+	transform: translateY(50px); // Start slightly below
+	transition: opacity 0.5s, transform 0.5s;
 }

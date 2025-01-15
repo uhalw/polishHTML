@@ -20,7 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
-
     // Bubble animations with yoyo effect
     const bubbleTimeline = gsap.timeline({ repeat: -1, yoyo: true });
     bubbleTimeline
@@ -135,11 +134,32 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-function showMore() {
-    var div = document.getElementById("myShow");
+function showMore(id) {
+    var div = document.getElementById(id);
     if (div.style.display === "none" || div.style.display === "") {
         div.style.display = "block";
     } else {
         div.style.display = "none";
     }
 }
+
+
+
+// GSReveal
+// Register ScrollTrigger
+gsap.registerPlugin(ScrollTrigger);
+
+// Apply reveal animation to all elements with 'gs-reveal' class
+gsap.utils.toArray(".gs-reveal").forEach((element) => {
+    gsap.from(element, {
+        scrollTrigger: {
+            trigger: element,
+            start: "top 85%", // Trigger when top of element reaches 85% of viewport
+            toggleActions: "play none none none", // Play animation only once
+        },
+        opacity: 0, // Start hidden
+        y: 50, // Slide up from 50px below
+        duration: .5, // Animation duration
+        ease: "power2.out", // Smooth easing
+    });
+});
