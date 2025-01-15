@@ -171,15 +171,18 @@ h2 img,
 /* Style for the close button */
 .popup .close {
   position: absolute;
-  font-size: 1.2rem;
   cursor: pointer;
   color: #333;
   left: 240px;
+  transition: 0.5s ease-in-out;
+}
+.popup .close:hover {
+  color: white;
 }
 .popup .close .popup-content button {
   margin: 20px auto;
   display: block;
-  width: 120px;
+  width: 140px;
 }
 
 .navbar {
@@ -471,11 +474,11 @@ section #front {
   font-size: 2rem;
   font-weight: 600;
   text-align: center;
-  margin: 2vw;
+  padding: 10px;
   width: 100%;
   max-width: 50vw;
   display: block;
-  justify-content: center;
+  justify-content: space-between;
 }
 .reading details,
 .focus details,
@@ -483,6 +486,11 @@ section #front {
   height: 40vh;
   max-width: 30vw;
   background-color: #E1EEB9;
+}
+.reading img,
+.focus img,
+.sleep img {
+  height: 40vh;
 }
 
 .anyone {
@@ -523,38 +531,48 @@ section #front {
 }
 
 .person {
-  scale: 0.95;
+  scale: 0.98;
   background-color: white;
   border: 3px solid #E685B0;
   border-radius: 10px;
   width: 20vw;
-  padding: 2vh 1vw;
+  height: 100%;
+  min-height: 20vh;
+  padding: 4vh 1vw;
   text-align: center;
-  transition: 0.5s ease-out;
+  transition: 0.5s ease-in;
   align-items: start;
   position: sticky;
 }
+.person h3 {
+  transition: 0.1s ease-in;
+}
 .person p {
   display: none;
-  transition: 0.5s ease-out;
+  transition: 1s ease-out;
+  color: white;
 }
 .person img {
   height: 100%;
   max-height: 20vh;
   width: 100%;
   max-width: 20vw;
-  transition: 0.5s ease-out;
+  transition: 1s ease-out;
 }
 .person:hover {
   scale: 1;
   background-color: #E685B0;
-  transition: 0.5s ease;
-  transition: 0.5s ease-out;
+  transition: 0.1s ease;
   color: white;
+  height: 100%;
 }
 .person:hover img {
   scale: 1.05;
   transition: 0.5s ease;
+}
+.person:hover h3 {
+  color: white;
+  transition: 0.4s ease-out;
 }
 .person:hover p {
   display: block;

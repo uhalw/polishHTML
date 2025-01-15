@@ -122,15 +122,19 @@ h2,
 /* Style for the close button */
 .popup .close {
 	position: absolute;
-	font-size: $p-size;
 	cursor: pointer;
 	color: #333;
 	left: 240px;
+	transition: .5s ease-in-out;
+
+	&:hover {
+		color: white;
+	}
 
 	.popup-content button {
 		margin: 20px auto;
 		display: block;
-		width: 120px;
+		width: 140px;
 
 	}
 }
@@ -139,7 +143,6 @@ h2,
 // ------------------
 // 共同區結束
 // ------------------
-
 
 
 
@@ -410,11 +413,11 @@ section #front {
 	/* Hidden by default */
 	margin: 20px;
 	padding: 20px;
-	background-color: #e1eeb9b1 ;
+	background-color: #e1eeb9b1;
 	/* Light background color */
 	border-radius: 8px;
 	/* Rounded corners */
-	box-shadow: 0 4px 8px #e1eeb9b1 ;
+	box-shadow: 0 4px 8px #e1eeb9b1;
 	/* Soft shadow */
 	max-width: 800px;
 	/* Limit the width */
@@ -466,7 +469,7 @@ section #front {
 
 #myShow button:hover {
 	background-color: #2980b9;
-// 	/* Darker blue on hover */
+	// 	/* Darker blue on hover */
 }
 
 // 舉例
@@ -478,18 +481,25 @@ section #front {
 	font-size: $h4-size;
 	font-weight: 600;
 	text-align: center;
-	margin: 2vw;
+	padding: 10px;
 	width: 100%;
 	max-width: 50vw;
 	display: block;
-	justify-content: center;
+	justify-content: space-between;
+
+
 
 	details {
 		height: 40vh;
 		max-width: 30vw;
 		background-color: $lightgreen;
 	}
+	
+	img {
+		height:40vh;
+	}
 }
+
 
 
 //困擾 
@@ -540,20 +550,28 @@ section #front {
 
 // 身分
 .person {
-	scale: 0.95;
+	scale: 0.98;
 	background-color: white;
 	border: 3px solid $pink;
 	border-radius: 10px;
 	width: 20vw;
-	padding: 2vh 1vw;
+	height: 100%;
+	min-height: 20vh;
+	padding: 4vh 1vw;
 	text-align: center;
-	transition: .5s ease-out;
+	transition: .5s ease-in;
 	align-items: start;
 	position: sticky;
 
+	h3 {
+		transition: .1s ease-in;
+
+	}
+
 	p {
 		display: none;
-		transition: .5s ease-out;
+		transition: 1s ease-out;
+		color: white;
 
 	}
 
@@ -562,19 +580,25 @@ section #front {
 		max-height: 20vh;
 		width: 100%;
 		max-width: 20vw;
-		transition: .5s ease-out;
+		transition: 1s ease-out;
 	}
 
 	&:hover {
 		scale: 1;
 		background-color: $pink;
-		transition: .5s ease;
-		transition: .5s ease-out;
+		transition: .1s ease;
 		color: white;
+		height: 100%;
 
 		img {
 			scale: 1.05;
 			transition: .5s ease;
+		}
+
+		h3 {
+			color: white;
+			transition: .4s ease-out;
+
 		}
 
 		p {
