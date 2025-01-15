@@ -55,6 +55,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let lastScrollY = window.scrollY; // Track the last scroll position
 
+    // Initially hide the navbar if the page is loaded and there is no scroll
+    navbar.style.top = "-120px"; // Start with navbar hidden
+
     document.addEventListener("scroll", () => {
         const currentScrollY = window.scrollY;
 
