@@ -492,7 +492,11 @@ section #front {
   cursor: pointer;
   margin-bottom: 10px;
   text-align: center;
-  transition: background-color 0.5s ease-in-out;
+  transition: background-color 2s step-end;
+}
+.contentexample .eg:hover {
+  transition: background-color 1s ease;
+  background-image: linear-gradient(transparent 50%, #E1EEB9 50%);
 }
 .contentexample p {
   font-size: 1.2rem;
@@ -504,7 +508,7 @@ section #front {
   font-size: 0.9rem;
   color: #A4C629;
   margin-top: 10px;
-  text-align: left;
+  text-align: center;
 }
 .contentexample a.via:hover {
   text-decoration: underline;
@@ -846,4 +850,75 @@ form .question .options label input {
   opacity: 0.9;
   transform: translateY(50px);
   transition: opacity 0.5s, transform 0.5s;
+}
+
+/* Animation for headings */
+.heading-animation {
+  animation: fadeSlideUp 0.8s ease-in-out both;
+}
+
+/* Keyframes for fade and slide up */
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Apply animation to all h2, h3, h4 */
+h2,
+h3,
+h4,
+.h2,
+p {
+  animation: fadeSlideUp 0.8s ease-in-out both;
+  transform-origin: bottom;
+  /* Optional for smoother visuals */
+}
+
+/* Optionally, you can vary delay or duration */
+h2,
+.h2 {
+  animation-delay: 0.2s;
+}
+
+p {
+  animation-delay: 0.1s;
+}
+
+h3 {
+  animation-delay: 0.4s;
+}
+
+h4 {
+  animation-delay: 0.6s;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+h2,
+h3,
+h4 {
+  opacity: 0;
+  /* Initially hidden */
+  transform: translateY(20px);
+  /* Start position */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  /* Smooth transition */
+}
+
+.animate {
+  animation: slideIn 0.5s forwards;
+  /* Trigger the animation */
 }/*# sourceMappingURL=style.css.map */

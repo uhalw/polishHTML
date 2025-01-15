@@ -185,3 +185,44 @@ learnpopup.addEventListener("click", (e) => {
 document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") togglePopup(false); // 按 ESC 鍵關閉
 });
+
+
+// all animation js
+
+document.addEventListener("DOMContentLoaded", () => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from("h2, h3, h4, .h2 ", {
+        opacity: 0,
+        y: 20,
+        duration: 1,
+        stagger: 0.1,
+        scrollTrigger: {
+            trigger: "h2, h3, h4 .h2",
+            start: "top 80%",
+            toggleActions: "play none none none",
+        },
+    });
+});
+
+// other ani
+
+document.addEventListener("DOMContentLoaded", () => {
+    const headings = document.querySelectorAll("h2, h3, h4");
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("animate");
+                    observer.unobserve(entry.target); // Stop observing once animated
+                }
+            });
+        },
+        {
+            threshold: 0.1, // Trigger when 10% of the element is in view
+        }
+    );
+
+    headings.forEach((heading) => observer.observe(heading));
+});
