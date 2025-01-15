@@ -934,20 +934,22 @@ form {
 
 
 // Results
-.results {
-	margin-top: 30px;
+#results {
+	margin-top: 20px;
 	padding: 20px;
-	background-color: #fff;
+	background-color: #f9f9f9; // Light background
+	border: 1px solid #ddd; // Border for differentiation
 	border-radius: 8px;
-	font-size: 18px;
+	font-family: 'Kiwi Maru', serif;
+	font-size: 16px;
 	color: #333;
-	text-align: center;
-	font-family: "Kiwi Maru", serif;
-	font-weight: $regular;
-	list-style: unset;
-	text-decoration: none;
 }
 
+
+
+
+
+// 整體動畫
 .gs-reveal {
 	opacity: 0.9; // Hidden initially
 	transform: translateY(50px); // Start slightly below
