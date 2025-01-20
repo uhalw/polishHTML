@@ -84,6 +84,7 @@ button {
   padding: 10px;
   background-color: white;
   transition: 0.5s ease-in-out;
+  cursor: pointer;
 }
 button:hover {
   color: white;
@@ -462,7 +463,7 @@ section #front {
   background-color: #3498db;
   /* Blue background */
   color: white;
-  /* White text */
+  cursor: pointer;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -614,6 +615,7 @@ section #front {
 }
 
 .person {
+  cursor: pointer;
   scale: 0.98;
   background-color: white;
   border: 3px solid #E685B0;
@@ -691,6 +693,7 @@ section #front {
   border: 3px solid #E685B0;
   padding: 10px;
   background-color: white;
+  cursor: pointer;
 }
 .post .post button:hover {
   color: white;

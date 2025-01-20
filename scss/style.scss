@@ -16,7 +16,7 @@ button {
 	padding: 10px;
 	background-color: white;
 	transition: .5s ease-in-out;
-
+	cursor: pointer;
 
 	&:hover {
 		color: white;
@@ -468,7 +468,7 @@ section #front {
 	background-color: #3498db;
 	/* Blue background */
 	color: white;
-	/* White text */
+	cursor: pointer;
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
@@ -532,10 +532,6 @@ section #front {
 		}
 	}
 }
-
-
-
-// 了解更多learnpopop
 
 
 // about彈跳視窗
@@ -663,6 +659,7 @@ section #front {
 
 // 身分
 .person {
+	cursor: pointer;
 	scale: 0.98;
 	background-color: white;
 	border: 3px solid $pink;
@@ -759,6 +756,8 @@ section #front {
 		border: 3px solid $pink;
 		padding: 10px;
 		background-color: white;
+		cursor: pointer;
+
 
 		&:hover {
 			color: white;
