@@ -37,7 +37,7 @@ h4 {
 }
 
 h5 {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
 }
 
 p {
@@ -87,8 +87,23 @@ nav {
   color: #333;
   text-decoration: none;
 }
-navh1 {
-  font-size: 10px;
+nav h1 {
+  background-image: linear-gradient(45deg, #A4C629, #66A2AF);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientAnimation 1s infinite linear;
+}
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 nav a {
   margin: 0 1vw 0 0.5vw;
@@ -102,6 +117,24 @@ nav a[type=button] {
 }
 nav .navP {
   height: 50px;
+}
+
+.intro {
+  height: 60vh;
+}
+
+.intro header {
+  text-align: center;
+  position: relative;
+  top: 10vh;
+}
+
+.intro img {
+  position: absolute;
+  left: 30vw;
+  width: 40vw;
+  bottom: 25vh;
+  opacity: 0.2;
 }
 
 .eg {

@@ -14,9 +14,28 @@ nav {
 	color: #333;
 	text-decoration: none;
 
-	&h1 {
-		font-size: 10px;
+	h1 {
+		background-image: linear-gradient(45deg, $green, $blue);
+		background-size: 300% 300%;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		animation: gradientAnimation 1s infinite linear;
 	}
+
+	@keyframes gradientAnimation {
+		0% {
+			background-position: 0% 50%;
+		}
+
+		50% {
+			background-position: 100% 50%;
+		}
+
+		100% {
+			background-position: 0% 50%;
+		}
+	}
+
 
 	a {
 		margin: 0 1vw 0 .5vw;
@@ -27,20 +46,38 @@ nav {
 			border: $lightgreen solid 2px;
 			border-radius: 50px;
 			padding: 10px 25px;
-			
+
 		}
 	}
 
 	.navP {
 		height: 50px;
-
 	}
 
 }
 
+// 開場/////開始//
+.intro {
+	height: 60vh;
+}
+
+.intro header {
+	text-align: center;
+	position: relative;
+	top: 10vh;
+}
+
+.intro img {
+	position: absolute;
+	left: 30vw;
+	width: 40vw;
+	bottom: 25vh;
+	opacity: 0.2;
+}
+
+// 開場/////結束//
 
 // 日常舉例/////開始//
-
 .eg {
 	border: 2px solid $green;
 }
