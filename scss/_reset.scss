@@ -17,11 +17,13 @@ footer {
     list-style: unset;
     text-decoration: none;
     color: rgb(53, 53, 53);
+	text-decoration: none;
+
 }
 
 
 h1 {
-    font-size: $h1-size;
+    margin: 0;
 }
 
 h2 {
@@ -60,13 +62,19 @@ img {
     font-weight: bold;
 }
 
-// 網站邊距
+// 導覽列
+nav{
+    padding: 5vh 1vw;
+
+}
+
+// 網站內邊距
 main {
     padding: 0 10vw;
 }
 
 // 網站每部分上下間隔距離
-header,
+
 section {
     padding: 15vh 0;
 }
@@ -80,6 +88,5 @@ html {
 
 a:hover{
     color: $blue;
-    text-decoration: underline;
 
 }

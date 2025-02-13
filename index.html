@@ -1,241 +1,137 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 
-
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WG7DW765JN"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-WG7DW765JN');
-    </script>
-    <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-PXXDDXSM');</script>
-    <!-- End Google Tag Manager -->
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Polishy｜你的神經多樣性導覽員</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>首頁</title>
     <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
-
 </head>
 
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PXXDDXSM" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+        <header>
+            <!--導覽列 -->
+            <nav>
+                <img class="navP" src="/images/vector/logo-outline.svg" alt="P的文字">
+                <h1><a href="index.html" />Polishy</h1>
+                <a href="#eglist">生活舉例</a>
+                <a href="#identity">身分選擇</a>
+                <a href="#post">相關文章</a>
+                <a href="">關於Polishy</a>
+                <a href="test.html" type="button">自我檢測</a>
+            </nav>
+        </header>
 
-    <!------------>
-    <!-- Navbar -->
-    <!------------>
-
-    <section class="navbar">
-        <div class="logo">
-            <img src="./images/vector/logo-outline.svg" alt="Polishy Logo">
-            <h2 id="logoH2"> <a href="index.html" /> Polishy</h2>
-            <a href="#example">生活舉例</a>
-            <a href="#identity">身分選擇</a>
-            <a href="#post">相關文章</a>
-
-            <!-- Button to open the popup -->
-            <button id="openPopup">關於 Polishy</button>
-            <!-- Popup container -->
-            <div id="popup" class="popup">
-                <div class="popup-content">
-                    <!-- <span id="closePopup" class="close">&times;</span> -->
-                    <h2>關於Polishy</h2>
-                    <p>Polishy 是一個介紹神經多樣性（Neurodiversity）
-                        的平台，「神經多樣性」強調每個人神經系統的運作方式都有獨特性，如自閉症、ADHD、學習障礙等特質。這些差異並非缺陷，而是多元化的存在。希望透過此平台提升大衆對神經多樣性的認知與理解，減少因缺乏相關知識而導致的資訊落差與誤解。
-                        <br>
-                        <br>
-                        Polishy 的發音為「波莉許」，是由 Polish（打磨、拋光）和
-                        Shy（害羞、緊張）結合而成的英文創意詞。我們希望每一塊内向、羞於表達的璞玉，都能找到屬於自己的生活方式。即使擁有非典型的特質，也能在打磨拋光後閃閃發亮。
-                    </p>
-                    <button id="closePopup" class="close">關閉視窗</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="textbtn">
-            <a href="test.html" class="button" alt="learn more">自我檢測</a>
-        </div>
-    </section>
-
-    <!------------>
-    <!-- 開頭文字 -->
-    <!------------>
     <main>
-        <div class="quotes">
-            <img src="./images/vector/Polishy.svg" alt="polishy">
-            <p>Polish isn't about perfection; it's about letting your true self shine through.</p>
-            <p>Polish your uniqueness—it's what makes you stand out in a world of sameness.</p>
-            <p>Don't blend in; polish until they shine.</p>
-        </div>
 
-        <section id="front">
-            <!-- 進場主要泡泡 -->
-            <div class="bubbles">
-                <img src="./images/vector/bubble-blue1.svg" id="bubble-blue1" alt="Bubble 1">
-                <img src="./images/vector/bubble-green1.svg" id="bubble-green1" alt="Bubble 2">
-                <img src="./images/vector/bubble-pink1.svg" id="bubble-pink1" alt="Bubble 3">
-            </div>
+        <!---------------->
+        <!-- 開場 intro -->
+        <!---------------->
+        <section class="intro">
+            <header>
+                <h5 id="q1"> Polish isn't about perfection; it's about letting your true self shine through. </h5>
+                <h5 id="q2">Polish your uniqueness—it's what makes you stand out in a world of sameness.</h5>
+                <h5 id="q3">Don't blend in; polish until they shine.</h5>
+            </header>
+            <img src="./images/vector/Polishy.svg" alt="Polishy logo">
+        </section>
 
-            <!-- 首頁 -->
-            <div class="h2">
-                <h2>什麼是神經多樣性？</h2>
-            </div>
-
-            <div class="frontcard">
+        <!-------------------------->
+        <!-- 什麼是神經多樣性 define -->
+        <!-------------------------->
+        <section class="define">
+            <header>
+                <h2 class="sh2">什麼是神經多樣性？</h2>
+                <img src="./images/vector/decor-leaf-smaill.svg" alt="裝飾葉子" class="decor">
+            </header>
+            <figure class="keyvisual">
                 <!-- 首頁主角 -->
-                <div class="figure">
-                    <img src="./images/figure/me1.svg" alt="">
-                    <img src="./images/figure/me2.svg" alt="">
-                    <img src="./images/figure/me3.svg" alt="">
-                    <img src="./images/figure/me4.svg" alt="">
-                </div>
+                <img src="./images/figure/me1.svg" alt="無表情的女生">
+                <img src="./images/figure/me2.svg" alt="舉手澆花的女生">
+                <img src="./images/figure/me3.svg" alt="舉手澆花微笑的女生">
+                <img src="./images/figure/me4.svg" alt="女生頭上長花">
+            </figure>
+            <article>
+                <h4>你有聽過神經多樣性嗎？</h4>
+                <p>第一次聽到可能以為這跟身體的神經系統有關，如果你是這樣想，恭喜答對！不過「神經多樣性」其實涵蓋更多的範圍跟定義，神經多樣性族群也生活在我們之間，人數可能比想像中還要更多。
+                </p>
+                <a href="" type="button">了解更多</a>
+            </article>
+        </section>
 
-                <div class="animate fronttext">
-                    <div class="animate text ">
-                        <h4>你有聽過神經多樣性嗎？</h4>
-                        <p>第一次聽到可能以為這跟身體的神經系統有關，如果你是這樣想，恭喜答對！不過「神經多樣性」其實涵蓋更多的範圍跟定義，神經多樣性族群也生活在我們之間，人數可能比想像中還要更多。</p>
-                    </div>
-
-                    <!-- Button to open the popup -->
-                    <button id="openLearnPopup" class="animate">了解更多</button>
-
-                </div>
-            </div> <!-- Popup container -->
-            <div id="learnpopup" class="learnpopup">
-                <div class="learnpopup-content">
-                    <!-- <span id="closePopup" class="close">&times;</span> -->
-                    <p>神經多樣性（Neurodiversity）強調大腦發展的多樣性，認為ADHD和自閉症不應視為「障礙症」，而是行為特質的維度，這些特質與典型神經發展群體的環境不符。此觀念挑戰了傳統病理模型，指出將這些狀況視為障礙會低估神經多樣性個體的優勢，並可能導致汙名化與心理健康問題。神經多樣性強調環境適應，提倡透過改變社會結構來減少對這些個體的限制，並發掘他們的天賦與優勢，而非僅關注生物心理社會機制。該視角鼓勵神經多樣性個體參與生命故事的敘述，並創造友善環境來減少歧視與刻板印象。結合傳統診療方式與神經多樣性概念，有助於提升神經多樣性個體的生活品質（Sonuga-Barke
-                        & Thapar, 2021）。</p>
-                    <br>
-                    <p>
-                        參考文獻：
-                        Sonuga-Barke, E., & Thapar, A. (2021). The neurodiversity concept: is it helpful for
-                        clinicians and
-                        scientists? Lancet Psychiatry, 8(7), 559-561. (王雅萱，譯)
+        <!-------------------->
+        <!--日常舉例 eglist -->
+        <!-------------------->
+        <section id="eglist">
+            <header>
+                <h2 class="sh2">神經多樣性的日常舉例</h2>
+                <img src="./images/vector/decor-leaf.svg" alt="裝飾葉子" class="decor">
+            </header>
+            <article class="content">
+                <div class="eg reading">
+                    <img src="./images/figure/reading.svg" alt="閲讀障礙煩惱圖">
+                    <h4>閲讀障礙</h4>
+                    <p>閲讀障礙是指在閲讀上有困難，包含：讀字正確度、閲讀速度或流暢度、閲讀理解。「失讀症」是用來統稱這種類型個案，特徵為無法正確或流暢的認字，解碼能力不佳，拼音能力差，通常亦會伴隨閲讀障礙或是數學推理困難。
                     </p>
-                    <button id="closeLearnPopup" class="close">關閉視窗</button>
+                    <a href="https://wd.vghtpe.gov.tw/PMREIP/Fpage.action?muid=8187&fid=8287" class="via"
+                        alt="學習障礙介紹 | 臺北榮總醫院復健部兒童發展評估中心">via</a>
                 </div>
-            </div>
+
+                <div class="eg focus">
+                    <img src="./images/figure/focus.svg" alt="無法注意力集中煩惱圖">
+                    <h4>注意力不足</h4>
+                    <p>注意力不足通常是指作事時無法專心，專注力短暫無法持續，容易被它事分心，行事粗心大意，常常出錯， 常常遺忘帶需要用的物品，討厭或逃避需要用心去做的事，或是做事缺乏條理組織。
+                    </p>
+                </div>
+
+                <div class="eg sleep">
+                    <img src="./images/figure/sleep.svg" alt="在床上失眠圖">
+                    <h4>睡眠障礙</h4>
+                    <p>睡眠障礙是指有入睡困難如擔心會失眠焦慮緊張；難以維持睡眠，常因為一點點聲響或光線就覺醒。睡眠品質不佳：主觀地認為睡不好，不能熟睡或頻頻做夢，或是雖然有睡覺，卻仍然沒有精神。半夜醒來也是睡眠障礙的一種。
+                    </p>
+                </div>
+            </article>
         </section>
 
-        <!-- <div id="myShow" style="display:none;">
-            <p>根據Sonuga-Barke與Thapar（2021）所述，神經多樣性（Neurodiversity）強調大腦發展的多樣性，認為ADHD和自閉症不應視為「障礙症」，而是行為特質的維度，這些特質與典型神經發展群體的環境不符。此觀念挑戰了傳統病理模型，指出將這些狀況視為障礙會低估神經多樣性個體的優勢，並可能導致汙名化與心理健康問題。神經多樣性強調環境適應，提倡透過改變社會結構來減少對這些個體的限制，並發掘他們的天賦與優勢，而非僅關注生物心理社會機制。該視角鼓勵神經多樣性個體參與生命故事的敘述，並創造友善環境來減少歧視與刻板印象。結合傳統診療方式與神經多樣性概念，有助於提升神經多樣性個體的生活品質（Sonuga-Barke
-                & Thapar, 2021）。</p>
-            <br>
-            <p>
-                參考文獻：
-                Sonuga-Barke, E., & Thapar, A. (2021). The neurodiversity concept: is it helpful for clinicians and
-                scientists? Lancet Psychiatry, 8(7), 559-561. (王雅萱，譯)
-            </p>
-        </div> -->
+        <!-- 你也有遇過這種人嗎 anyone -->
+        <section id="anyone">
+            <article>
+                <header>
+                    <p>\神經多樣性其實還有很多不同的類型/</p>
+                    <h2 class="sh2">你也有遇過這種人嗎</h2>
+                <img src="./images/vector/decor-yellow2.svg" alt="裝飾黃花" class="decor">
 
-        <!----------------------->
-        <!-- 神經多樣性的日常舉例 -->
-        <!----------------------->
-
-        <section class="example" id="example">
-            <!-- h2 -->
-            <div class="h2">
-                <h2>神經多樣性的日常舉例</h2>
-                <img src="./images/vector/decor-leaf.svg" alt="decor-leaf">
-            </div>
-
-            <div class="animate contentexample">
-                <div class="reading">
-                    <img src="./images/figure/reading.svg" alt="reading" class="reading">
-                    <div class="eg">閲讀障礙</div>
-                    <div id="readingContent" style="display:none;">
-                        <p>閲讀障礙是指在閲讀上有困難，包含：讀字正確度、閲讀速度或流暢度、閲讀理解。「失讀症」是用來統稱這種類型個案，特徵為無法正確或流暢的認字，解碼能力不佳，拼音能力差，通常亦會伴隨閲讀障礙或是數學推理困難。
-                        </p>
-                        <a href="https://wd.vghtpe.gov.tw/PMREIP/Fpage.action?muid=8187&fid=8287" class="via"
-                            alt="學習障礙介紹 | 臺北榮總醫院復健部兒童發展評估中心">via</a>
-                    </div>
-                </div>
-
-                <div class="focus">
-                    <img src="./images/figure/focus.svg" alt="focus" class="focus">
-                    <div class="eg" >注意力不足</div>
-                    <div id="focusContent" style="display:none;">
-                        <p>注意力不足通常是指作事時無法專心，專注力短暫無法持續，容易被它事分心，行事粗心大意，常常出錯， 常常遺忘帶需要用的物品，討厭或逃避需要用心去做的事，或是做事缺乏條理組織。
-                        </p>
-                    </div>
-                </div>
-
-                <div class="sleep">
-                    <img src="./images/figure/sleep.svg" alt="sleep" class="sleep">
-                    <div class="eg">睡眠障礙</div>
-                    <div id="sleepContent" style="display:none;">
-                        <p>睡眠障礙是指有入睡困難如擔心會失眠焦慮緊張；難以維持睡眠，常因為一點點聲響或光線就覺醒。睡眠品質不佳：主觀地認為睡不好，不能熟睡或頻頻做夢，或是雖然有睡覺，卻仍然沒有精神。半夜醒來也是睡眠障礙的一種。
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-------------------->
-        <!-- 你身邊也有這種人嗎 -->
-        <!-------------------->
-
-        <section class="anyone animate ">
-
-            <div class="h2">
-                <h2 class="animate">你身邊也有這種人嗎</h2>
-            </div>
-
-            <div class="explain gs-reveal">
+                </header>
                 <p>覺得這個人的想法總是和他人不同<br>
                     很容易轉移話題 <br>
                     思想模式很跳動<br>
-                    沒辦法仔細聆聽別人説話</p>
-                <div class="messy">
+                    沒辦法仔細聆聽別人説話 <br>
+                    好像都會忘記反覆提醒的事項 <br>
+                </p>
+                <figure>
                     <img src="./images/figure/messy-figure.svg" alt="messy-figure">
                     <img src="./images/figure/messy-figure-back.svg" alt="messy-figure-back">
                     <img src="./images/figure/messy-frontL.svg" alt="messy-frontL">
                     <img src="./images/figure/messy-frontR.svg" alt="messy-frontR">
-                </div>
-                <br>
-                <br>
-                <br>
+                </figure>
                 <p>～其實有更多能跟他相處愉快的方式～</p>
-            </div>
+            </article>
         </section>
 
+        <!------------------------------>
+        <!-- 怎麼跟該族群相處？ identity -->
+        <!------------------------------>
 
-        <!-------------------->
-        <!--從身分角度選擇 -->
-        <!-------------------->
+        <section id="identity">
+            <header>
+                <h2 class="sh2">要怎麼跟神經多樣性的人相處呢？</h2>
+                <img src="./images/vector/decor-yellow1.svg" alt="裝飾黃花" class="decor">
 
-        <section class="identity" id="identity">
-            <!-- 插入H2 -->
-            <div class="h2">
-                <img src="./images/vector/decor-red2.svg" alt="decor-flower-red2">
-                <h2>怎麼跟該族群相處？</h2>
-            </div>
-            <div class="content">
-                <!-- 插入泡泡 -->
-                <div class="bubbles">
-                    <img src="./images/vector/bubble-pink3.svg" alt="bubble-pink3">
-                </div>
-                <!-- 身分角色 -->
+                <p>如果你是～</p>
+            </header>
+            <article class="content">
                 <div class="person">
                     <img src="./images/figure/fam.svg" alt="家人">
                     <h3>家人</h3>
@@ -253,31 +149,24 @@
                     <h3>同事</h3>
                     <p>同事的溝通盡量保持透明，給予明確指示與足夠的反應時間。尊重工作風格差異。鼓勵包容文化，創造理解和協作的氛圍，便能讓他們更能發揮潛力。</p>
                 </div>
-            </div>
+            </article>
 
-            <!-- 裝飾泡泡 -->
-            <div id="bubble-blue2">
-                <img src="./images/vector/bubble-blue2.svg" alt="Bubble 2">
-            </div>
         </section>
 
 
 
-        <!------------->
-        <!-- 相關文章 -->
-        <!------------->
 
-        <section class="post" id="post">
+        <!---------------------->
+        <!-- 相關文章 postlist -->
+        <!---------------------->
+        <section id="post">
 
-            <div class="bubbles">
-                <img src="./images/vector/bubble-pink-ol1.svg" id="" alt="">
-            </div>
-            <div class="h2">
-                <img src="./images/vector/decor-yellow-long.svg" alt="">
-                <h2>相關文章</h2>
-            </div>
+            <header>
+                <h2 class="sh2">相關文章</h2>
+                <img src="./images/vector/decor-red2.svg" alt="裝飾紅花" class="decor">
 
-            <div class="content">
+            </header>
+            <article class="content">
                 <!-- 單篇文章 -->
                 <div class="post">
                     <img src="./images/figure/post1.svg" alt="post1">
@@ -290,12 +179,12 @@
                 <!-- 單篇文章 -->
                 <div class="post">
                     <img src="./images/figure/post2.svg" alt="post2">
-
                     <h5>2024.12.09</h5>
                     <h4>不同中尋求相同頻率</h4>
                     <p>在包容團體中獲得支持，可提升自信、促進社交適應；透過同儕理解與接納，減少孤立，建立互助關係並發揮個體獨特潛能。</p>
                     <button>More</button>
                 </div>
+
                 <!-- 單篇文章 -->
                 <div class="post">
                     <img src="./images/figure/post3.svg" alt="post3">
@@ -304,15 +193,18 @@
                     <p>醫療體制串聯能有效整合診療服務，提供專業支持之餘也能提升診斷與治療效率，從而改善治療結果與患者福祉。</p>
                     <button>More</button>
                 </div>
-            </div>
+
+            </article>
+
+
         </section>
 
     </main>
 
+
     <!---------->
     <!-- 頁尾 -->
     <!---------->
-
     <footer>
         <div class="navbar-btm">
             <li>
@@ -332,18 +224,15 @@
         </div>
     </footer>
 
-    <!---------->
+    <!----------->
     <!-- 程式區 -->
-    <!---------->
-
+    <!----------->
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-
-    <!-- Include ScrollTrigger Plugin -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <!-- JS -->
     <script src="./js/script.js"></script>
+
 </body>
 
 </html>
